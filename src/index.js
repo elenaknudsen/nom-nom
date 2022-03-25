@@ -1,17 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+
+import BackgroundPage from './BackgroundPage';
+
+//colors
+let NAVY_BLUE = '#13294B';
+let CAROLINA_BLUE = '#4B9CD3';
+let GREENISH = '#79C99E';
+let GOLDENISH = '#F4AC45';
+let colors = {NAVY_BLUE, CAROLINA_BLUE, GREENISH, GOLDENISH}
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+   <div id='root' style={{ height: '100%', position: 'absolute', top: '0px', left: '0px', width: '100%', overflow: 'hidden', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+    <BackgroundPage colors={colors}/>
+   </div>,
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
