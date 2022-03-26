@@ -6,17 +6,17 @@ import Star from '@mui/icons-material/Star';
 import StarOutline from '@mui/icons-material/StarOutline';
 import StarHalf from '@mui/icons-material/StarHalf';
 
-class RestaurantCard extends React.Component {
+class Result extends React.Component {
     render () {
-        return(<Paper style={{ backgroundColor: this.props.colors.GREENISH, padding: 10,  width: 200, height: 250, marginLeft: 25}} >
-        <Paper style={{ backgroudColor: 'white', height: 160, marginBottom: 25}}></Paper>
-        <div class="row">
-            <div class="column" style={{float: 'left'}}>
-                <Typography>restaurant</Typography>
-                <Typography>cuisine</Typography>
+        return(<Paper style={{ backgroundColor: this.props.colors.GREENISH, padding: 10,  width: 750, height: 250, margin: 10}} >
+         <div class="row">
+            <div class="column" style={{float: 'left', width: 200,}}>
+            <Paper style={{ backgroudColor: 'white', height: 160, marginBottom: 25}}></Paper>
             </div>
-            <div class="column">
-                <Icon style={{color: this.props.colors.GOLDENISH}}><Star fontSize="small"/></Icon>
+            <div class="column" style={{marginTop: 50}}>
+                <Typography fontSize="32px" style={{marginLeft: 250}}>restaurant</Typography>
+                <Typography fontSize="24px" style={{marginLeft: 250}}>cuisine</Typography>
+                <Icon style={{color: this.props.colors.GOLDENISH, marginLeft: 50}}><Star fontSize="small"/></Icon>
                 <Icon style={{color: this.props.colors.GOLDENISH}}><Star fontSize="small"/></Icon>
                 <Icon style={{color: this.props.colors.GOLDENISH}}><Star fontSize="small"/></Icon>
                 <Icon style={{color: this.props.colors.GOLDENISH}}><StarHalf fontSize="small"/></Icon>
@@ -29,4 +29,4 @@ class RestaurantCard extends React.Component {
     }
 }
 
-export default RestaurantCard;
+export default Result;

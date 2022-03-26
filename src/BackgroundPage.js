@@ -4,6 +4,8 @@ import Homepage from './Homepage';
 import Navbar from './Navbar';
 import SearchResults from './SearchResults';
 import SearchFilters from './SearchFilters';
+import RestaurantPage from './RestaurantPage';
+import NewReview from './NewReview';
 
 class BackgroundPage extends React.Component {
     constructor(props) {
@@ -23,7 +25,7 @@ class BackgroundPage extends React.Component {
     render () {
         return(<>
          <Navbar colors={this.props.colors} onSearchClick={this.onSearchClick}/>
-         {this.state.homepage ? <Homepage colors={this.props.colors}/> : <SearchFilters colors={this.props.colors}/>}
+         {this.state.homepage ? <Homepage colors={this.props.colors}/> : <NewReview colors={this.props.colors}/>}
         </>)
     }
 }

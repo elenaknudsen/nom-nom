@@ -11,16 +11,26 @@ import SearchIcon from '@mui/icons-material/Search';
 import Star from '@mui/icons-material/Star';
 import StarOutline from '@mui/icons-material/StarOutline';
 import StarHalf from '@mui/icons-material/StarHalf';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemButton from '@mui/material/ListItemButton';
 
 import RestaurantCard from './RestaurantCard.js';
 
 
 class HomePage extends React.Component {
     render () {
-        return(<div style={{ display: 'flex', flexDirection: 'column', overflowY: 'scroll'}}>
+        return(<>
+            <List style={{display: 'flex', flexDirection: 'row'}}>
+            <ListItemButton style={{padding: 0}}><RestaurantCard  colors={this.props.colors} /></ListItemButton>
+            <ListItemButton style={{padding: 0}}><RestaurantCard  colors={this.props.colors} /></ListItemButton>
+            <ListItemButton style={{padding: 0}}><RestaurantCard  colors={this.props.colors} /></ListItemButton>
+
+        </List>
+        <div style={{  overflow: 'scroll'}}>
         <div style={{ textAlign: 'left', width:'100%', marginLeft: '5%', marginTop: '3%' }}>
             <Typography style={{marginLeft: 25, fontSize: '24px', padding: 10}}>cheap eats</Typography>
-            <div style={{ display: 'flex', flexDirection: 'row', overflowX: 'scroll'}}> 
+            <div style={{ display: 'flex', flexDirection: 'row'}}> 
                 <RestaurantCard colors={this.props.colors}/>
                 <RestaurantCard colors={this.props.colors}/>
                 <RestaurantCard colors={this.props.colors}/>
@@ -29,9 +39,9 @@ class HomePage extends React.Component {
                 <RestaurantCard colors={this.props.colors}/>
             </div>
         </div>
-        <div style={{ textAlign: 'left', width:'100%', marginLeft: '5%', marginTop: '3%' }}>
+        <div style={{ textAlign: 'left', width:'100%', marginLeft: '5%', marginTop: '3%'}}>
             <Typography style={{marginLeft: 25, fontSize: '24px', padding: 10}}>chapel hill classics</Typography>
-            <div style={{ display: 'flex', flexDirection: 'row', overflowX: 'scroll'}}> 
+            <div style={{ display: 'flex', flexDirection: 'row', }}> 
                 <RestaurantCard colors={this.props.colors}/>
                 <RestaurantCard colors={this.props.colors}/>
                 <RestaurantCard colors={this.props.colors}/>
@@ -42,7 +52,7 @@ class HomePage extends React.Component {
         </div>
         <div style={{ textAlign: 'left', width:'100%', marginLeft: '5%', marginTop: '3%' }}>
             <Typography style={{marginLeft: 25, fontSize: '24px', padding: 10}}>fast</Typography>
-            <div style={{ display: 'flex', flexDirection: 'row', overflowX: 'scroll', marginBottom: 100}}> 
+            <div style={{ display: 'flex', flexDirection: 'row', marginBottom: 100}}> 
                 <RestaurantCard colors={this.props.colors}/>
                 <RestaurantCard colors={this.props.colors}/>
                 <RestaurantCard colors={this.props.colors}/>
@@ -51,7 +61,8 @@ class HomePage extends React.Component {
                 <RestaurantCard colors={this.props.colors}/>
             </div>
         </div>
-        </div>)
+        </div>
+        </>)
     }
 }
 
