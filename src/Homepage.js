@@ -11,9 +11,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import Star from '@mui/icons-material/Star';
 import StarOutline from '@mui/icons-material/StarOutline';
 import StarHalf from '@mui/icons-material/StarHalf';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
+
 
 import RestaurantCard from './RestaurantCard.js';
 
@@ -21,27 +19,24 @@ import RestaurantCard from './RestaurantCard.js';
 class HomePage extends React.Component {
     render () {
         return(<>
-            <List style={{display: 'flex', flexDirection: 'row'}}>
-            <ListItemButton style={{padding: 0}}><RestaurantCard  colors={this.props.colors} /></ListItemButton>
-            <ListItemButton style={{padding: 0}}><RestaurantCard  colors={this.props.colors} /></ListItemButton>
-            <ListItemButton style={{padding: 0}}><RestaurantCard  colors={this.props.colors} /></ListItemButton>
-
-        </List>
-        <div style={{  overflow: 'scroll'}}>
+            
+        <div style={{  overflowY: 'scroll'}}>
         <div style={{ textAlign: 'left', width:'100%', marginLeft: '5%', marginTop: '3%' }}>
-            <Typography style={{marginLeft: 25, fontSize: '24px', padding: 10}}>cheap eats</Typography>
-            <div style={{ display: 'flex', flexDirection: 'row'}}> 
-                <RestaurantCard colors={this.props.colors}/>
-                <RestaurantCard colors={this.props.colors}/>
-                <RestaurantCard colors={this.props.colors}/>
-                <RestaurantCard colors={this.props.colors}/>
-                <RestaurantCard colors={this.props.colors}/>
-                <RestaurantCard colors={this.props.colors}/>
+            <Typography style={{marginLeft: 25, fontSize: '24px', padding: 10, color: 'white'}}>cheap eats</Typography>
+            <div style={{ display: 'flex', flexDirection: 'row', width: 1600, overflowX: 'scroll'}}> 
+                <RestaurantCard goToRestaurantPage={this.props.goToRestaurantPage} colors={this.props.colors}/>
+                <RestaurantCard goToRestaurantPage={this.props.goToRestaurantPage} colors={this.props.colors}/>
+                <RestaurantCard goToRestaurantPage={this.props.goToRestaurantPage} colors={this.props.colors}/>
+                <RestaurantCard goToRestaurantPage={this.props.goToRestaurantPage} colors={this.props.colors}/>
+                <RestaurantCard goToRestaurantPage={this.props.goToRestaurantPage} colors={this.props.colors}/>
+                <RestaurantCard goToRestaurantPage={this.props.goToRestaurantPage} colors={this.props.colors}/>
+                <RestaurantCard goToRestaurantPage={this.props.goToRestaurantPage} colors={this.props.colors}/>
+
             </div>
         </div>
         <div style={{ textAlign: 'left', width:'100%', marginLeft: '5%', marginTop: '3%'}}>
-            <Typography style={{marginLeft: 25, fontSize: '24px', padding: 10}}>chapel hill classics</Typography>
-            <div style={{ display: 'flex', flexDirection: 'row', }}> 
+            <Typography style={{marginLeft: 25, fontSize: '24px', padding: 10, color: 'white'}}>chapel hill classics</Typography>
+            <div style={{ display: 'flex', flexDirection: 'row',  }}> 
                 <RestaurantCard colors={this.props.colors}/>
                 <RestaurantCard colors={this.props.colors}/>
                 <RestaurantCard colors={this.props.colors}/>
@@ -51,7 +46,7 @@ class HomePage extends React.Component {
             </div>
         </div>
         <div style={{ textAlign: 'left', width:'100%', marginLeft: '5%', marginTop: '3%' }}>
-            <Typography style={{marginLeft: 25, fontSize: '24px', padding: 10}}>fast</Typography>
+            <Typography style={{marginLeft: 25, fontSize: '24px', padding: 10, color: 'white'}}>fast</Typography>
             <div style={{ display: 'flex', flexDirection: 'row', marginBottom: 100}}> 
                 <RestaurantCard colors={this.props.colors}/>
                 <RestaurantCard colors={this.props.colors}/>

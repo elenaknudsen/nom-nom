@@ -12,6 +12,17 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 
 class NewReview extends React.Component {
+  constructor(props) {
+    super(props);
+  this.state = {
+
+  };
+  this.handleClick = this.handleClick.bind(this)
+  }
+
+  handleClick(event) {
+      this.props.goToRestaurantPage();
+  }
     render () {
         return(<>
             <Paper style={{backgroundColor: this.props.colors.CAROLINA_BLUE, margin: 25, padding: 30}}>
@@ -62,8 +73,8 @@ class NewReview extends React.Component {
             <TextField></TextField>
             </div>
             <div style={{display: 'flex', flexDirection: 'row', margin: 10}}>
-            <Button variant="contained" style={{backgroundColor: this.props.colors.GREENISH}}>cancel</Button>
-            <Button variant="contained" style={{backgroundColor: this.props.colors.GREENISH}}>submit</Button>
+            <Button variant="contained" style={{backgroundColor: this.props.colors.GREENISH}} onClick={this.handleClick}>cancel</Button>
+            <Button variant="contained" style={{backgroundColor: this.props.colors.GREENISH}} onClick={this.handleClick}>submit</Button>
             </div>
     
             </Paper>

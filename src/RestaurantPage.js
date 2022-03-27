@@ -14,6 +14,17 @@ import ListItemButton from '@mui/material/ListItemButton';
 import Review from './Review';
 
 class RestaurantPage extends React.Component {
+    constructor(props) {
+        super(props);
+      this.state = {
+
+      };
+      this.handleClick = this.handleClick.bind(this)
+      }
+
+      handleClick(event) {
+          this.props.goToReviewPage();
+      }
     render () {
         return(<>
         <Paper style={{backgroundColor: this.props.colors.CAROLINA_BLUE, margin: 25, padding: 30, overflow: 'scroll'}}>
@@ -46,7 +57,7 @@ class RestaurantPage extends React.Component {
         <div style={{display: 'flex', flexDirection: 'row', margin: 10}}>
         <Typography fontSize="28px">leave a review:</Typography>
         <List>
-            <ListItemButton>
+            <ListItemButton onClick={this.handleClick}>
             <Icon style={{color: this.props.colors.GOLDENISH}}><StarOutline fontSize="small"/></Icon>
         <Icon style={{color: this.props.colors.GOLDENISH}}><StarOutline fontSize="small"/></Icon>
         <Icon style={{color: this.props.colors.GOLDENISH}}><StarOutline fontSize="small"/></Icon>
