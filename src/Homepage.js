@@ -22,7 +22,7 @@ class HomePage extends React.Component {
             
         <div style={{  overflowY: 'scroll'}}>
         <div style={{ textAlign: 'left', width:'100%', marginLeft: '5%', marginTop: '3%' }}>
-            <Typography style={{marginLeft: 25, fontSize: '24px', padding: 10, color: 'white'}}>cheap eats</Typography>
+            <Typography style={{marginLeft: 25, fontSize: '24px', padding: 10, color: 'white', fontFamily: 'PT Serif'}}>cheap eats</Typography>
             <div style={{ display: 'flex', flexDirection: 'row', width: 1600, overflowX: 'scroll'}}> 
                 <RestaurantCard goToRestaurantPage={this.props.goToRestaurantPage} colors={this.props.colors}/>
                 <RestaurantCard goToRestaurantPage={this.props.goToRestaurantPage} colors={this.props.colors}/>
@@ -35,7 +35,7 @@ class HomePage extends React.Component {
             </div>
         </div>
         <div style={{ textAlign: 'left', width:'100%', marginLeft: '5%', marginTop: '3%'}}>
-            <Typography style={{marginLeft: 25, fontSize: '24px', padding: 10, color: 'white'}}>chapel hill classics</Typography>
+            <Typography style={{marginLeft: 25, fontSize: '24px', padding: 10, color: 'white', fontFamily: 'PT Serif'}}>chapel hill classics</Typography>
             <div style={{ display: 'flex', flexDirection: 'row',  }}> 
                 <RestaurantCard colors={this.props.colors}/>
                 <RestaurantCard colors={this.props.colors}/>
@@ -46,7 +46,7 @@ class HomePage extends React.Component {
             </div>
         </div>
         <div style={{ textAlign: 'left', width:'100%', marginLeft: '5%', marginTop: '3%' }}>
-            <Typography style={{marginLeft: 25, fontSize: '24px', padding: 10, color: 'white'}}>fast</Typography>
+            <Typography style={{marginLeft: 25, fontSize: '24px', padding: 10, color: 'white', fontFamily: 'PT Serif'}}>fast</Typography>
             <div style={{ display: 'flex', flexDirection: 'row', marginBottom: 100}}> 
                 <RestaurantCard colors={this.props.colors}/>
                 <RestaurantCard colors={this.props.colors}/>

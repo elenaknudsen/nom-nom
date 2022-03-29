@@ -24,7 +24,7 @@ class Navbar extends React.Component {
     }
     render () {
         return(<Paper style={{ backgroundColor: this.props.colors.CAROLINA_BLUE, width: '110%', textAlign: 'center'}} >
-        <Typography style={{fontSize: '32px', color: 'white'}} m={2}>
+        <Typography style={{fontSize: '32px', color: 'white', fontFamily: 'Pacifico'}} m={2}>
         <IconButton onClick={this.goBack}><Icon style={{color: 'white'}}><ArrowBackIcon fontSize="large"/></Icon></IconButton>
         nom nom 
         <IconButton onClick={this.handleClick}><Icon style={{color: 'white'}}><SearchIcon fontSize="large"/></Icon></IconButton>
