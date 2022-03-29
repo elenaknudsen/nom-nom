@@ -1,7 +1,6 @@
 import React from 'react';
 import Paper from '@mui/material/Paper'
 import { Typography } from '@mui/material';
-import Chip from '@mui/material/Chip';
 import Icon from '@mui/material/Icon';
 import StarOutline from '@mui/icons-material/StarOutline';
 import InputLabel from '@mui/material/InputLabel';
@@ -12,6 +11,7 @@ import List from '@mui/material/List';
 import ListItemButton from '@mui/material/ListItemButton';
 
 import Review from './Review';
+import ClickableChip from './ClickableChip';
 
 class RestaurantPage extends React.Component {
     constructor(props) {
@@ -46,17 +46,17 @@ class RestaurantPage extends React.Component {
         <Typography fontSize="28px">not too busy</Typography>
         </div>
         <div style={{display: 'flex', flexDirection: 'row', margin: 10}}>
-        <Chip label="website"/>
-        <Chip label="menu"/>
-        <Chip label="directions"/>
+        <ClickableChip colors={this.props.colors} label="website"/>
+        <ClickableChip colors={this.props.colors} label="menu"/>
+        <ClickableChip colors={this.props.colors} label="directions"/>
         </div>
         <div style={{display: 'flex', flexDirection: 'row', margin: 10}}>
         <Typography fontSize="28px">vibes:</Typography>
         </div>
         <div style={{display: 'flex', flexDirection: 'row', margin: 10}}>
-        <Chip label="#studygrind"/>
-        <Chip label="#quirky"/>
-        <Chip label="#cozy"/>
+        <ClickableChip colors={this.props.colors} label="#studygrind"/>
+        <ClickableChip colors={this.props.colors} label="#quirky"/>
+        <ClickableChip colors={this.props.colors} label="#cozy"/>
         </div>
         <div style={{display: 'flex', flexDirection: 'row', margin: 10}}>
         <Typography fontSize="28px">leave a review:</Typography>

@@ -33,7 +33,7 @@ class SearchFilters extends React.Component {
             <CollapseElement title={'dietary restrictions'} options={['vegetarian', 'vegan', 'gluten-free']}/>
             <CollapseElement title={'proximity'} options={['< .5 miles', '< 1 mile', '< 5 miles']}/>
             <CollapseElement title={'predicted wait times'} options={['< 5 minutes', '< 10 minutes', '< 30 minutes']}/>
-            <CollapseElement title={'vibes'} options={['#studyvibes', '#datenight', '#quirky', '#sporty', '#loud']}/>
+            <CollapseElement colors={this.props.colors} title={'vibes'} options={['#studyvibes', '#datenight', '#quirky', '#sporty', '#loud']}/>
             <ListItem style={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
                 <Button variant="contained" onClick={this.handleClick} style={{backgroundColor: this.props.colors.GREENISH}}>clear all filters</Button>
             </ListItem>

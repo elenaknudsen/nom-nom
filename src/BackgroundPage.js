@@ -80,7 +80,7 @@ class BackgroundPage extends React.Component {
     }
     render () {
         return(<>
-         <Navbar colors={this.props.colors} prevPage={this.state.prevPage} onBackButton={this.onBackButton} onSearchClick={this.onSearchClick}/>
+         <Navbar colors={this.props.colors} prevPage={this.state.prevPage} currentPage={this.state.page} onBackButton={this.onBackButton} onSearchClick={this.onSearchClick}/>
          {this.renderSwitch(this.state.page)}
         </>)
     }

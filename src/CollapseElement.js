@@ -2,13 +2,13 @@ import React from 'react';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
-import Chip from '@mui/material/Chip';
 import ListItemText from '@mui/material/ListItemText';
 import Collapse from '@mui/material/Collapse';
 import ExpandLess from '@mui/icons-material/ExpandLess';
 import ExpandMore from '@mui/icons-material/ExpandMore';
 import Checkbox from '@mui/material/Checkbox';
-import Button from '@mui/material/Button';
+
+import ClickableChip from './ClickableChip';
 
 class CollapseElement extends React.Component {
     constructor(props) {
@@ -28,7 +28,7 @@ class CollapseElement extends React.Component {
 
         generateCheckboxes(element){
             if(this.props.title==='vibes') {
-                return (<Chip label={element} />)
+                return (<ClickableChip colors={this.props.colors} label={element} />)
             }else {
             return (<ListItem sx={{ pl: 4 }}>
                 <Checkbox checked={this.props.clearFilters}></Checkbox>
