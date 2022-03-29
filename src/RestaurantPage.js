@@ -33,9 +33,13 @@ class RestaurantPage extends React.Component {
             <Paper style={{ backgroudColor: 'white', height: 160, width: 160}}/>
             <Paper style={{ backgroudColor: 'white', height: 160, width: 160}}/>
         </div>
-        <div style={{display: 'flex', flexDirection: 'row', margin: 10}}>
+        <div class="row" style={{display: 'flex', flexDirection: 'row', margin: 10}}>
+        <div class="column" style={{float: 'left'}}>
         <Typography fontSize="36px">restaurant</Typography>
+        </div>
+        <div class="column" style={{float: 'right', alignContent: 'right', textAlign: 'right'}}>
         <Typography fontSize="28px">$$$</Typography>
+        </div>
         </div>
         <div style={{display: 'flex', flexDirection: 'row'}}>
         <Typography fontSize="28px">open 10am-8pm</Typography>

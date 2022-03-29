@@ -12,9 +12,10 @@ class BackgroundPage extends React.Component {
         super(props);
       this.state = {
         page: 'homepage',
-        prevPage: 'homepage'
+        prevPage: []
       };
       this.onSearchClick = this.onSearchClick.bind(this);
+      this.onBackButton = this.onBackButton.bind(this);
       this.goToRestaurantPage = this.goToRestaurantPage.bind(this);
       this.goToReviewPage = this.goToReviewPage.bind(this);
       }
@@ -37,29 +38,49 @@ class BackgroundPage extends React.Component {
       }
 
     onSearchClick(event) {
-        if (this.state.page == 'searchFilters') {
+        let temp = this.state.prevPage;
+        temp.push(this.state.page)
+        if (this.state.page === 'searchFilters') {
             this.setState({
-                page: 'searchResults'
-            })
+                page: 'searchResults',
+                prevPage: temp
+           })
         } else {
             this.setState({
-                page: 'searchFilters'
+                page: 'searchFilters',
+                prevPage: temp
             })
         }
     }
+
     goToRestaurantPage(event) {
+        let temp = this.state.prevPage;
+        temp.push(this.state.page)
         this.setState({
-            page: 'restaurantPage'
+            page: 'restaurantPage',
+            prevPage: temp
         })
     }
     goToReviewPage(event) {
+        let temp = this.state.prevPage;
+        temp.push(this.state.page)
         this.setState({
-            page: 'newReview'
+            page: 'newReview',
+            prevPage: temp
+        })
+    }
+
+    onBackButton(event) {
+        let temp = this.state.prevPage;
+        temp.pop();
+        this.setState({
+            page: this.state.prevPage[this.state.prevPage.length-1],
+            prevPage: temp
         })
     }
     render () {
         return(<>
-         <Navbar colors={this.props.colors} onSearchClick={this.onSearchClick}/>
+         <Navbar colors={this.props.colors} prevPage={this.state.prevPage} onBackButton={this.onBackButton} onSearchClick={this.onSearchClick}/>
          {this.renderSwitch(this.state.page)}
         </>)
     }

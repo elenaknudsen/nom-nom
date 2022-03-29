@@ -20,7 +20,7 @@ class RestaurantCard extends React.Component {
           this.props.goToRestaurantPage();
       }
     render () {
-        return(<Paper style={{ backgroundColor: this.props.colors.GREENISH, padding: 10,  width: 200, height: 250, marginLeft: 25}} >
+        return(<Paper style={{ backgroundColor: this.props.colors.CAROLINA_BLUE, padding: 10,  width: 200, height: 250, marginLeft: 25}} >
         <Paper style={{ backgroudColor: 'white', height: 160, marginBottom: 25}}></Paper>
         <div class="row">
             <div class="column" style={{float: 'left'}}>

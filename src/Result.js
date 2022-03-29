@@ -8,7 +8,7 @@ import StarHalf from '@mui/icons-material/StarHalf';
 
 class Result extends React.Component {
     render () {
-        return(<Paper style={{ backgroundColor: this.props.colors.GREENISH, padding: 10,  width: 750, height: 250, margin: 10}} >
+        return(<Paper style={{ backgroundColor: this.props.colors.CAROLINA_BLUE, padding: 10,  width: 750, height: 250, margin: 10}} >
          <div class="row">
             <div class="column" style={{float: 'left', width: 200,}}>
             <Paper style={{ backgroudColor: 'white', height: 160, marginBottom: 25}}></Paper>
