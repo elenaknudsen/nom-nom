@@ -13,6 +13,7 @@ class SearchFilters extends React.Component {
           clearFilters: null,
       };
       this.handleClick = this.handleClick.bind(this);
+      this.handleSearch = this.handleSearch.bind(this);
       }
     
     
@@ -20,6 +21,10 @@ class SearchFilters extends React.Component {
         this.setState({
             clearFilters: true
         })
+    }
+
+    handleSearch(event) {
+       this.props.goToSearchResults();
     }
 
     render () {
@@ -34,8 +39,9 @@ class SearchFilters extends React.Component {
             <CollapseElement title={'proximity'} options={['< .5 miles', '< 1 mile', '< 5 miles']}/>
             <CollapseElement title={'predicted wait times'} options={['< 5 minutes', '< 10 minutes', '< 30 minutes']}/>
             <CollapseElement colors={this.props.colors} title={'vibes'} options={['#studyvibes', '#datenight', '#quirky', '#sporty', '#loud']}/>
-            <ListItem style={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
+            <ListItem style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', padding: 10}}>
                 <Button variant="contained" onClick={this.handleClick} style={{backgroundColor: this.props.colors.GREENISH}}>clear all filters</Button>
+                <Button variant="contained" onClick={this.handleSearch} style={{backgroundColor: this.props.colors.GREENISH}}>search</Button>
             </ListItem>
         </List>
         </div>)

@@ -29,7 +29,7 @@ class Navbar extends React.Component {
         <Typography style={{fontSize: '32px', color: 'white'}} m={2}>
         {this.props.prevPage.length!==0 ? <IconButton onClick={this.handleBack}><Icon style={{color: 'white'}}><ArrowBackIcon/></Icon></IconButton> : <></>}
         {this.props.currentPage==='searchFilters' ? <TextField></TextField> : <>nom nom</>}
-        <IconButton onClick={this.handleClick}><Icon style={{color: 'white'}}><SearchIcon/></Icon></IconButton>
+        {this.props.currentPage!=='searchFilters' ? <IconButton onClick={this.handleClick}><Icon style={{color: 'white'}}><SearchIcon/></Icon></IconButton> : <></>}
         </Typography>
         
         </Paper>)

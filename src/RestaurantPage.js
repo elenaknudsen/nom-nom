@@ -5,13 +5,15 @@ import Icon from '@mui/material/Icon';
 import StarOutline from '@mui/icons-material/StarOutline';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
+import Chip from '@mui/material/Chip';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import List from '@mui/material/List';
 import ListItemButton from '@mui/material/ListItemButton';
+import ListItem from '@mui/material/ListItem';
+import Button from '@mui/material/Button';
 
 import Review from './Review';
-import ClickableChip from './ClickableChip';
 
 class RestaurantPage extends React.Component {
     constructor(props) {
@@ -42,28 +44,22 @@ class RestaurantPage extends React.Component {
         <Typography fontSize="16px" style={{ display: "grid", gridColumn: "5/6" }}>not too busy</Typography>
         </div>
         <div style={{ display: "flex", flexDirection: "row", margin: 10 }}>
-        <ClickableChip colors={this.props.colors} label="website"/>
-        <ClickableChip colors={this.props.colors} label="menu"/>
-        <ClickableChip colors={this.props.colors} label="directions"/>
+        <Chip style={{color: 'white'}} label="website"/>
+        <Chip style={{color: 'white'}} label="directions"/>
         </div>
         <div style={{display: 'flex', flexDirection: 'row', margin: 10}}>
         <Typography fontSize="32px">vibes:</Typography>
         </div>
         <div style={{display: 'flex', flexDirection: 'row', margin: 10}}>
-        <ClickableChip colors={this.props.colors} label="#studygrind"/>
-        <ClickableChip colors={this.props.colors} label="#quirky"/>
-        <ClickableChip colors={this.props.colors} label="#cozy"/>
+        <Chip style={{color: 'white'}} label="#studygrind"/>
+        <Chip style={{color: 'white'}} label="#quirky"/>
+        <Chip style={{color: 'white'}} label="#cozy"/>
         </div>
-        <div style={{display: 'flex', flexDirection: 'row', margin: 10}}>
-        <Typography fontSize="16px" style={{marginTop: 15}}>leave a review:</Typography>
+        <div style={{display: 'flex', flexDirection: 'column'}}>
         <List>
-            <ListItemButton onClick={this.handleClick}>
-            <Icon style={{color: this.props.colors.GOLDENISH}}><StarOutline fontSize="small"/></Icon>
-        <Icon style={{color: this.props.colors.GOLDENISH}}><StarOutline fontSize="small"/></Icon>
-        <Icon style={{color: this.props.colors.GOLDENISH}}><StarOutline fontSize="small"/></Icon>
-        <Icon style={{color: this.props.colors.GOLDENISH}}><StarOutline fontSize="small"/></Icon>
-        <Icon style={{color: this.props.colors.GOLDENISH}}><StarOutline fontSize="small"/></Icon>
-            </ListItemButton>
+            <ListItem>
+                <Button variant="contained" style={{backgroundColor: this.props.colors.GREENISH}} onClick={this.handleClick}>leave a review</Button>
+            </ListItem>
         </List>
         
         </div>

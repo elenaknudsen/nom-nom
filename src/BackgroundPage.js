@@ -18,6 +18,7 @@ class BackgroundPage extends React.Component {
       this.onBackButton = this.onBackButton.bind(this);
       this.goToRestaurantPage = this.goToRestaurantPage.bind(this);
       this.goToReviewPage = this.goToReviewPage.bind(this);
+      this.goToSearchResults = this.goToSearchResults.bind(this);
       }
       
 
@@ -26,7 +27,7 @@ class BackgroundPage extends React.Component {
           case 'homepage':
             return (<Homepage goToRestaurantPage={this.goToRestaurantPage} colors={this.props.colors} />);
           case 'searchFilters':
-            return (<SearchFilters colors={this.props.colors} />);
+            return (<SearchFilters goToSearchResults={this.goToSearchResults} colors={this.props.colors} />);
           case 'searchResults':
             return (<SearchResults goToRestaurantPage={this.goToRestaurantPage} colors={this.props.colors} />);
           case 'restaurantPage':
@@ -41,17 +42,10 @@ class BackgroundPage extends React.Component {
     onSearchClick(event) {
         let temp = this.state.prevPage;
         temp.push(this.state.page)
-        if (this.state.page === 'searchFilters') {
-            this.setState({
-                page: 'searchResults',
-                prevPage: temp
-           })
-        } else {
             this.setState({
                 page: 'searchFilters',
                 prevPage: temp
             })
-        }
     }
 
     goToRestaurantPage(event) {
@@ -59,6 +53,14 @@ class BackgroundPage extends React.Component {
         temp.push(this.state.page)
         this.setState({
             page: 'restaurantPage',
+            prevPage: temp
+        })
+    }
+    goToSearchResults(event) {
+        let temp = this.state.prevPage;
+        temp.push(this.state.page)
+        this.setState({
+            page: 'searchResults',
             prevPage: temp
         })
     }
