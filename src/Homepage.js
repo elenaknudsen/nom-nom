@@ -9,10 +9,10 @@ class HomePage extends React.Component {
     render () {
         return(<>
             
-        <div style={{  overflowY: 'scroll', overflowX: 'hidden'}}>
+        <div style={{  width: window.innerWidth, overflowY: 'scroll', overflowX: 'hidden'}}>
         <div style={{ textAlign: 'left', marginLeft: '5%', marginTop: '3%' }}>
             <Typography style={{marginLeft: 25, fontSize: '24px', padding: 10, color: 'white'}}>cheap eats</Typography>
-            <div style={{ display: 'flex', flexDirection: 'row', width: 1600, overflowX: 'scroll'}}> 
+            <div style={{ display: 'flex', flexDirection: 'row', overflowX: 'scroll'}}> 
                 <RestaurantCard goToRestaurantPage={this.props.goToRestaurantPage} colors={this.props.colors}/>
                 <RestaurantCard goToRestaurantPage={this.props.goToRestaurantPage} colors={this.props.colors}/>
                 <RestaurantCard goToRestaurantPage={this.props.goToRestaurantPage} colors={this.props.colors}/>

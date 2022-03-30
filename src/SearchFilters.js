@@ -23,10 +23,10 @@ class SearchFilters extends React.Component {
     }
 
     render () {
-        return(<>
-        <List style={{backgroundColor: this.props.colors.CAROLINA_BLUE, color: 'white', overflow: 'scroll', margin: 20}}>
-            <ListItem style={{backgroundColor: this.props.colors.GREENISH}}>
-                <ListItemText>filters</ListItemText>
+        return(<div style={{width: window.innerWidth, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', overflowY: 'scroll'}}>
+        <List style={{backgroundColor: this.props.colors.CAROLINA_BLUE, color: 'white', overflow: 'scroll', margin: 20, paddingTop: 0, width: 300 }}>
+            <ListItem style={{backgroundColor: this.props.colors.GREENISH, padding: 20}}>
+                <ListItemText  primaryTypographyProps={{fontSize: '24px'}} >filters</ListItemText>
             </ListItem>
             <CollapseElement title={'price'} options={['cheap eats', 'mid-range', 'splurge day']}/>
             <CollapseElement title={'cuisine'} options={['american', 'italian', 'japanese', 'indian', 'mexican']}/>
@@ -38,7 +38,7 @@ class SearchFilters extends React.Component {
                 <Button variant="contained" onClick={this.handleClick} style={{backgroundColor: this.props.colors.GREENISH}}>clear all filters</Button>
             </ListItem>
         </List>
-        </>)
+        </div>)
     }
 }
 

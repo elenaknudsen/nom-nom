@@ -8,15 +8,15 @@ import StarHalf from '@mui/icons-material/StarHalf';
 
 class Result extends React.Component {
     render () {
-        return(<Paper style={{ backgroundColor: this.props.colors.CAROLINA_BLUE, padding: 10,  width: 750, height: 250, margin: 10}} >
+        return(<Paper style={{ backgroundColor: this.props.colors.CAROLINA_BLUE, padding: 10,  width: '90%', height: 250, margin: 10}} >
          <div class="row">
-            <div class="column" style={{float: 'left', width: 200,}}>
+            <div class="column" style={{float: 'left', width: 170, marginRight: 10}}>
             <Paper style={{ backgroudColor: 'white', height: 160, marginBottom: 25}}></Paper>
             </div>
             <div class="column" style={{marginTop: 50}}>
-                <Typography fontSize="32px" style={{marginLeft: 250}}>restaurant</Typography>
-                <Typography fontSize="24px" style={{marginLeft: 250}}>cuisine</Typography>
-                <Icon style={{color: this.props.colors.GOLDENISH, marginLeft: 50}}><Star fontSize="small"/></Icon>
+                <Typography fontSize="24px">restaurant</Typography>
+                <Typography fontSize="20px">cuisine</Typography>
+                <Icon style={{color: this.props.colors.GOLDENISH}}><Star fontSize="small"/></Icon>
                 <Icon style={{color: this.props.colors.GOLDENISH}}><Star fontSize="small"/></Icon>
                 <Icon style={{color: this.props.colors.GOLDENISH}}><Star fontSize="small"/></Icon>
                 <Icon style={{color: this.props.colors.GOLDENISH}}><StarHalf fontSize="small"/></Icon>

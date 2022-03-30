@@ -1,17 +1,17 @@
 import React from 'react';
 import Paper from '@mui/material/Paper'
 import { Typography } from '@mui/material';
-import Chip from '@mui/material/Chip';
 import Icon from '@mui/material/Icon';
 import IconButton from '@mui/material/IconButton';
 import StarOutline from '@mui/icons-material/StarOutline';
 import Star from '@mui/icons-material/Star';
-import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
+
+import ClickableChip from './ClickableChip';
 
 class NewReview extends React.Component {
   constructor(props) {
@@ -33,8 +33,8 @@ class NewReview extends React.Component {
   }
     render () {
         return(<>
-            <Paper style={{backgroundColor: this.props.colors.CAROLINA_BLUE, margin: 25, padding: 30, display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
-            <div class="row" style={{display: 'flex', flexDirection: 'row', justifyContent: 'center'}}>
+            <Paper style={{width: 300, height: window.innerHeight, backgroundColor: this.props.colors.CAROLINA_BLUE, margin: 25, padding: 30, display: 'flex', flexDirection: 'column', justifyContent: 'center', overflow: 'scroll'}}>
+            <div style={{display: 'flex', flexDirection: 'row', marginTop: 20}}>
             <IconButton onClick={() => this.handleStar(1)}>{this.state.stars===0 ? <Icon style={{color: this.props.colors.GOLDENISH, padding:10}}><StarOutline fontSize="large"/></Icon> : <Icon style={{color: this.props.colors.GOLDENISH, padding:10}}><Star fontSize="large"/></Icon>}</IconButton>
             <IconButton onClick={() => this.handleStar(2)}>{this.state.stars<=1 ? <Icon style={{color: this.props.colors.GOLDENISH, padding:10}}><StarOutline fontSize="large"/></Icon> : <Icon style={{color: this.props.colors.GOLDENISH, padding:10}}><Star fontSize="large"/></Icon>}</IconButton>
             <IconButton onClick={() => this.handleStar(3)}>{this.state.stars<=2 ? <Icon style={{color: this.props.colors.GOLDENISH, padding:10}}><StarOutline fontSize="large"/></Icon> : <Icon style={{color: this.props.colors.GOLDENISH, padding:10}}><Star fontSize="large"/></Icon>}</IconButton>
@@ -42,8 +42,8 @@ class NewReview extends React.Component {
             <IconButton onClick={() => this.handleStar(5)}>{this.state.stars<=4 ? <Icon style={{color: this.props.colors.GOLDENISH, padding:10}}><StarOutline fontSize="large"/></Icon> : <Icon style={{color: this.props.colors.GOLDENISH, padding:10}}><Star fontSize="large"/></Icon>}</IconButton>
             </div>
             <div style={{display: 'flex', flexDirection: 'row', margin: 10}}>
-            <Typography fontSize="28px">how long did you wait for food?</Typography>
-            <FormControl style={{width: 200}}>
+            <Typography fontSize="20px">how long did you wait for food?</Typography>
+            <FormControl style={{width: 200, marginLeft: 20}}>
             <Select>
               <MenuItem value={10}>less than 10 minutes</MenuItem>
               <MenuItem value={20}>10-30 minutes</MenuItem>
@@ -52,8 +52,8 @@ class NewReview extends React.Component {
           </FormControl>
             </div>
             <div style={{display: 'flex', flexDirection: 'row', margin: 10}}>
-            <Typography fontSize="28px">how much did you spend?</Typography>
-            <FormControl style={{width: 200}}>
+            <Typography fontSize="20px">how much did you spend?</Typography>
+            <FormControl style={{width: 200, marginLeft: 20}}>
             <Select>
               <MenuItem value={10}>less than $10</MenuItem>
               <MenuItem value={20}>$10-$20</MenuItem>
@@ -65,24 +65,24 @@ class NewReview extends React.Component {
             <Typography fontSize="28px">vibes:</Typography>
             </div>
             <div style={{display: 'flex', flexDirection: 'row', margin: 10}}>
-            <Chip label="#studygrind"/>
-            <Chip label="#quirky"/>
-            <Chip label="#cozy"/>
+            <ClickableChip colors={this.props.colors} label="#studygrind"/>
+            <ClickableChip colors={this.props.colors} label="#quirky"/>
+            <ClickableChip colors={this.props.colors} label="#cozy"/>
             </div>
             <div style={{display: 'flex', flexDirection: 'row', margin: 10}}>
-            <Typography fontSize="28px">leave a review:</Typography>
+            <Typography fontSize="28px">leave a comment:</Typography>
             </div>
             <div style={{display: 'flex', flexDirection: 'row', margin: 10}}>
-            <Typography fontSize="28px">title:</Typography>
-            <TextField></TextField>
+            <Typography fontSize="20px">title:</Typography>
+            <TextField style={{marginLeft: 20}}></TextField>
             </div>
             <div style={{display: 'flex', flexDirection: 'row', margin: 10}}>
-            <Typography fontSize="28px">review:</Typography>
-            <TextField></TextField>
+            <Typography fontSize="20px">comment:</Typography>
+            <TextField style={{marginLeft: 20}}></TextField>
             </div>
-            <div style={{display: 'flex', flexDirection: 'row', margin: 10}}>
-            <Button variant="contained" style={{backgroundColor: this.props.colors.GREENISH}} onClick={this.handleClick}>cancel</Button>
-            <Button variant="contained" style={{backgroundColor: this.props.colors.GREENISH}} onClick={this.handleClick}>submit</Button>
+            <div style={{ display: "grid", flexDirection: "row", margin: 20}}>
+            <Button variant="contained" style={{backgroundColor: this.props.colors.GREENISH, display: "grid", gridColumn: "1/2" }} onClick={this.handleClick}>cancel</Button>
+            <Button variant="contained" style={{backgroundColor: this.props.colors.GREENISH, display: "grid", gridColumn: "4/5" }} onClick={this.handleClick}>submit</Button>
             </div>
     
             </Paper>

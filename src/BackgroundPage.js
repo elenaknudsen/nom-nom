@@ -19,6 +19,7 @@ class BackgroundPage extends React.Component {
       this.goToRestaurantPage = this.goToRestaurantPage.bind(this);
       this.goToReviewPage = this.goToReviewPage.bind(this);
       }
+      
 
       renderSwitch(page) {
         switch(page) {
@@ -73,8 +74,10 @@ class BackgroundPage extends React.Component {
     onBackButton(event) {
         let temp = this.state.prevPage;
         temp.pop();
+        console.log(temp)
+        console.log(temp.length)
         this.setState({
-            page: this.state.prevPage[this.state.prevPage.length-1],
+            page: temp[temp.length-1],
             prevPage: temp
         })
     }

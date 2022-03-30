@@ -20,14 +20,12 @@ class SearchResults extends React.Component {
 
       handleClick(event) {
           this.props.goToRestaurantPage();
-          console.log("ASJDHAJHA")
       }
     render () {
-        return(<>
-            <List style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', overflow: 'scroll', paddingTop: 200, margin: 20, padding: 1025, pointerEvents: 'fill'}}>
-                <div style={{display: 'flex', flexDirection: 'row', marginTop: 100, marginLeft: 20}}>
-                <Typography style={{color: 'white', fontSize: '24px'}}>X results found</Typography>
-                <FormControl style={{width: 200, borderColor: 'white'}}>
+        return(<div style={{ width: window.innerWidth, overflowY: 'scroll', overflowX: 'hidden',display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
+        <div style={{ display: "grid", marginTop: 20, marginLeft:10, width: 300}}>
+                <Typography style={{color: 'white', fontSize: '20px', display: "grid", gridColumn: "1/3", marginTop: 15 }}>X results found</Typography>
+                <FormControl style={{width: '80%', borderColor: 'white', display: "grid", gridColumn: "5/6", width: 150 }}>
                     <InputLabel style={{color: 'white'}}>filter by</InputLabel>
                     <Select style={{borderColor: 'white', color: 'white'}}>
                     <MenuItem value={10}>top rated</MenuItem>
@@ -36,29 +34,52 @@ class SearchResults extends React.Component {
                     </Select>
                 </FormControl>
                 </div>
-                <ListItemButton onClick={this.handleClick} style={{padding: 0}}>
+                    <List style={{width: 350, display: 'flex', flexDirection: 'column', height: '100%',  overflow: 'auto', willChange: 'transform'}}>
+                        <ListItemButton style={{padding: 0 }}onClick={this.handleClick}>
+                            <Result colors={this.props.colors} />
+                        </ListItemButton>
+                        <ListItemButton style={{padding: 0 }}onClick={this.handleClick}>
+                            <Result colors={this.props.colors} />
+                        </ListItemButton>
+                        <ListItemButton style={{padding: 0 }}onClick={this.handleClick}>
+                            <Result colors={this.props.colors} />
+                        </ListItemButton>
+                        <ListItemButton style={{padding: 0 }}onClick={this.handleClick}>
+                            <Result colors={this.props.colors} />
+                        </ListItemButton>
+                        <ListItemButton style={{padding: 0 }}onClick={this.handleClick}>
+                            <Result colors={this.props.colors} />
+                        </ListItemButton>
+                        <ListItemButton style={{padding: 0 }}onClick={this.handleClick}>
+                            <Result colors={this.props.colors} />
+                        </ListItemButton>
+                       
+                        
+                    </List>
+            {/* <List style={{width: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
+                <ListItemButton onClick={this.handleClick} style={{padding: 0, width: '97%'}}>
+                <Result style={{width: '97%'}}colors={this.props.colors}>asdfa</Result>
+                </ListItemButton>
+                <ListItemButton onClick={this.handleClick} style={{padding: 0, width: '97%'}}>
                 <Result colors={this.props.colors}>asdfa</Result>
                 </ListItemButton>
-                <ListItemButton onClick={this.handleClick} style={{padding: 0}}>
+                <ListItemButton onClick={this.handleClick} style={{padding: 0, width: '97%'}}>
                 <Result colors={this.props.colors}>asdfa</Result>
                 </ListItemButton>
-                <ListItemButton onClick={this.handleClick} style={{padding: 0}}>
+                <ListItemButton onClick={this.handleClick} style={{padding: 0, width: '97%'}}>
                 <Result colors={this.props.colors}>asdfa</Result>
                 </ListItemButton>
-                <ListItemButton onClick={this.handleClick} style={{padding: 0}}>
+                <ListItemButton onClick={this.handleClick} style={{padding: 0, width: '97%'}}>
                 <Result colors={this.props.colors}>asdfa</Result>
                 </ListItemButton>
-                <ListItemButton onClick={this.handleClick} style={{padding: 0}}>
+                <ListItemButton onClick={this.handleClick} style={{padding: 0, width: '97%'}}>
                 <Result colors={this.props.colors}>asdfa</Result>
                 </ListItemButton>
-                <ListItemButton onClick={this.handleClick} style={{padding: 0}}>
+                <ListItemButton onClick={this.handleClick} style={{padding: 0, width: '97%'}}>
                 <Result colors={this.props.colors}>asdfa</Result>
                 </ListItemButton>
-                <ListItemButton onClick={this.handleClick} style={{padding: 0}}>
-                <Result colors={this.props.colors}>asdfa</Result>
-                </ListItemButton>
-            </List>
-        </>)
+            </List> */}
+        </div>)
     }
 }
 

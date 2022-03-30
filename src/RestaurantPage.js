@@ -27,31 +27,27 @@ class RestaurantPage extends React.Component {
       }
     render () {
         return(<>
-        <Paper style={{backgroundColor: this.props.colors.CAROLINA_BLUE, margin: 25, padding: 30, overflow: 'scroll'}}>
+        <Paper style={{width: 300, backgroundColor: this.props.colors.CAROLINA_BLUE, margin: 25, padding: 20, overflow: 'scroll'}}>
         <div class="row" style={{display: 'flex', flexDirection: 'row'}}>
-            <Paper style={{ backgroudColor: 'white', height: 160, width: 160}}/>
-            <Paper style={{ backgroudColor: 'white', height: 160, width: 160}}/>
-            <Paper style={{ backgroudColor: 'white', height: 160, width: 160}}/>
+            <Paper style={{ backgroudColor: 'white', height: 100, width: 100}}/>
+            <Paper style={{ backgroudColor: 'white', height: 100, width: 100}}/>
+            <Paper style={{ backgroudColor: 'white', height: 100, width: 100}}/>
         </div>
-        <div class="row" style={{display: 'flex', flexDirection: 'row', margin: 10}}>
-        <div class="column" style={{float: 'left'}}>
-        <Typography fontSize="36px">restaurant</Typography>
+        <div style={{ display: "grid", marginLeft:10, marginTop:10 }}>
+        <Typography fontSize="32px" style={{ display: "grid", gridColumn: "1/3" }}>restaurant</Typography>
+        <Typography fontSize="24px" style={{ display: "grid", gridColumn: "4/5", marginTop: 7 }}>$$$</Typography>
         </div>
-        <div class="column" style={{float: 'right', alignContent: 'right', textAlign: 'right'}}>
-        <Typography fontSize="28px">$$$</Typography>
+        <div style={{ display: "grid", marginLeft: 10 }}>
+        <Typography fontSize="16px" style={{ display: "grid", gridColumn: "1/3" }}>open 10am-8pm</Typography>
+        <Typography fontSize="16px" style={{ display: "grid", gridColumn: "5/6" }}>not too busy</Typography>
         </div>
-        </div>
-        <div style={{display: 'flex', flexDirection: 'row'}}>
-        <Typography fontSize="28px">open 10am-8pm</Typography>
-        <Typography fontSize="28px">not too busy</Typography>
-        </div>
-        <div style={{display: 'flex', flexDirection: 'row', margin: 10}}>
+        <div style={{ display: "flex", flexDirection: "row", margin: 10 }}>
         <ClickableChip colors={this.props.colors} label="website"/>
         <ClickableChip colors={this.props.colors} label="menu"/>
         <ClickableChip colors={this.props.colors} label="directions"/>
         </div>
         <div style={{display: 'flex', flexDirection: 'row', margin: 10}}>
-        <Typography fontSize="28px">vibes:</Typography>
+        <Typography fontSize="32px">vibes:</Typography>
         </div>
         <div style={{display: 'flex', flexDirection: 'row', margin: 10}}>
         <ClickableChip colors={this.props.colors} label="#studygrind"/>
@@ -59,7 +55,7 @@ class RestaurantPage extends React.Component {
         <ClickableChip colors={this.props.colors} label="#cozy"/>
         </div>
         <div style={{display: 'flex', flexDirection: 'row', margin: 10}}>
-        <Typography fontSize="28px">leave a review:</Typography>
+        <Typography fontSize="16px" style={{marginTop: 15}}>leave a review:</Typography>
         <List>
             <ListItemButton onClick={this.handleClick}>
             <Icon style={{color: this.props.colors.GOLDENISH}}><StarOutline fontSize="small"/></Icon>
@@ -72,8 +68,8 @@ class RestaurantPage extends React.Component {
         
         </div>
         <div style={{display: 'flex', flexDirection: 'row', margin: 10}}>
-        <Typography fontSize="28px">reviews:</Typography>
-        <FormControl style={{width: 200}}>
+        <Typography fontSize="16px" style={{marginTop: 15}}>reviews:</Typography>
+        <FormControl style={{width: 200, marginLeft: 20}}>
         <InputLabel>filter by</InputLabel>
         <Select>
           <MenuItem value={10}>upvotes</MenuItem>
