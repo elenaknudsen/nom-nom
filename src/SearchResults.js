@@ -20,10 +20,18 @@ class SearchResults extends React.Component {
       }
 
       handleClick(event) {
-          this.props.goToRestaurantPage();
+          this.props.data.restaurants.forEach( element => {
+              if (element.name===event) {
+                this.props.goToRestaurantPage(element);
+
+              }
+          })
+          //console.log(this.props.data.restaurants[event.target.textContent])
+          //this.props.goToRestaurantPage(this.props.data.restaurants[0]);
       }
       getRestaurants(element) {
-          return(<ListItemButton style={{padding: 0 }}onClick={this.handleClick}>
+          //console.log(element.name)
+          return(<ListItemButton style={{padding: 0 }}onClick={()=>this.handleClick(element.name)}>
             <Result data={element} colors={this.props.colors} />
         </ListItemButton>)
       }
