@@ -19,13 +19,33 @@ class RestaurantPage extends React.Component {
     constructor(props) {
         super(props);
       this.state = {
+          key: Object.keys(this.props.data.reviews)
 
       };
       this.handleClick = this.handleClick.bind(this)
+      this.generateVibes = this.generateVibes.bind(this)
+      this.chipClick = this.chipClick.bind(this)
+      this.generateReviews = this.generateReviews.bind(this)
       }
 
       handleClick(event) {
           this.props.goToReviewPage();
+      }
+      generateVibes(title) {
+          return(<Chip style={{color: 'white', backgroundColor: this.props.colors.GOLDENISH}} label={title}/>)
+      }
+      chipClick(event){
+          let link = event.target.textContent;
+          if(link==='website') {
+              window.open(this.props.data.website)
+          } else {
+              window.open(this.props.data.directions)
+          }
+      }
+      generateReviews(element) {
+            let content = this.props.data.reviews[element].comment;
+            let stars = this.props.data.reviews[element].stars;
+        return(<Review title={element} content={content} colors={this.props.colors} stars={stars}></Review>)
       }
     render () {
         return(<>
@@ -36,24 +56,22 @@ class RestaurantPage extends React.Component {
             <Paper style={{ backgroudColor: 'white', height: 100, width: 100}}/>
         </div>
         <div style={{ display: "grid", marginLeft:10, marginTop:10 }}>
-        <Typography fontSize="32px" style={{ display: "grid", gridColumn: "1/3" }}>restaurant</Typography>
-        <Typography fontSize="24px" style={{ display: "grid", gridColumn: "4/5", marginTop: 7 }}>$$$</Typography>
+        <Typography fontSize="32px" style={{ display: "grid", gridColumn: "1/3" }}>{this.props.data.name}</Typography>
+        <Typography fontSize="24px" style={{ display: "grid", gridColumn: "4/5", marginTop: 7 }}>{this.props.data.price}</Typography>
         </div>
         <div style={{ display: "grid", marginLeft: 10 }}>
-        <Typography fontSize="16px" style={{ display: "grid", gridColumn: "1/3" }}>open 10am-8pm</Typography>
+        <Typography fontSize="16px" style={{ display: "grid", gridColumn: "1/3" }}>{this.props.data.hours}</Typography>
         <Typography fontSize="16px" style={{ display: "grid", gridColumn: "5/6" }}>not too busy</Typography>
         </div>
         <div style={{ display: "flex", flexDirection: "row", margin: 10 }}>
-        <Chip style={{color: 'white'}} label="website"/>
-        <Chip style={{color: 'white'}} label="directions"/>
+        <Chip onClick={this.chipClick} style={{color: 'white'}} label="website"/>
+        <Chip onClick={this.chipClick} style={{color: 'white'}} label="directions"/>
         </div>
         <div style={{display: 'flex', flexDirection: 'row', margin: 10}}>
         <Typography fontSize="32px">vibes:</Typography>
         </div>
-        <div style={{display: 'flex', flexDirection: 'row', margin: 10}}>
-        <Chip style={{color: 'white'}} label="#studygrind"/>
-        <Chip style={{color: 'white'}} label="#quirky"/>
-        <Chip style={{color: 'white'}} label="#cozy"/>
+        <div style={{ margin: 10}}>
+        {this.props.data.vibes.map(element => this.generateVibes(element))}
         </div>
         <div style={{display: 'flex', flexDirection: 'column'}}>
         <List>
@@ -74,10 +92,7 @@ class RestaurantPage extends React.Component {
       </FormControl>
         </div>
         <div style={{display: 'flex', flexDirection: 'column', margin: 10, overflow: 'scroll', gap: 10}}>
-            <Review colors={this.props.colors}></Review>
-            <Review colors={this.props.colors}></Review>
-            <Review colors={this.props.colors}></Review>
-            <Review colors={this.props.colors}></Review>
+            {this.state.key.map(element => this.generateReviews(element))}
         </div>
 
         </Paper>

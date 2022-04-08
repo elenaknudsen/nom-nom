@@ -17,7 +17,7 @@ class RestaurantCard extends React.Component {
       }
 
       handleClick(event) {
-          this.props.goToRestaurantPage();
+          this.props.goToRestaurantPage(this.props.data);
       }
     render () {
         return(<ListItemButton style={{padding: 0 }} onClick={this.handleClick}>

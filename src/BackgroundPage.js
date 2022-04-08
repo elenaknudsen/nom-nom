@@ -144,6 +144,7 @@ class BackgroundPage extends React.Component {
     constructor(props) {
         super(props);
       this.state = {
+        restaurantInfo: null,
         page: 'homepage',
         prevPage: []
       };
@@ -164,7 +165,7 @@ class BackgroundPage extends React.Component {
           case 'searchResults':
             return (<SearchResults data={testData} goToRestaurantPage={this.goToRestaurantPage} colors={this.props.colors} />);
           case 'restaurantPage':
-            return (<RestaurantPage goToReviewPage={this.goToReviewPage} colors={this.props.colors} />);
+            return (<RestaurantPage data={this.state.restaurantInfo} goToReviewPage={this.goToReviewPage} colors={this.props.colors} />);
           case 'newReview': 
             return (<NewReview goToRestaurantPage={this.goToRestaurantPage} colors={this.props.colors} />);
           default:
@@ -184,11 +185,11 @@ class BackgroundPage extends React.Component {
     goToRestaurantPage(event) {
         let temp = this.state.prevPage;
         if (this.state.page==='newReview') {
-
         } else {
             temp.push(this.state.page)
         }
         this.setState({
+            restaurantInfo: event,
             page: 'restaurantPage',
             prevPage: temp
         })

@@ -15,7 +15,6 @@ class HomePage extends React.Component {
       }
 
       generateCards(element){
-          //console.log(element.name)
           return (<RestaurantCard data={element} goToRestaurantPage={this.props.goToRestaurantPage} colors={this.props.colors} />)
         }
     render () {
