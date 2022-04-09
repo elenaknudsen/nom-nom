@@ -24,7 +24,8 @@ class NewReview extends React.Component {
   }
 
   handleClick(event) {
-      this.props.goToRestaurantPage();
+    console.log(this.props.data)
+      this.props.goToRestaurantPage(this.props.data);
   }
   handleStar(number) {
     this.setState({
@@ -32,9 +33,10 @@ class NewReview extends React.Component {
     })
   }
     render () {
+      console.log(this.props.data)
         return(<>
             <Paper style={{width: 300, height: window.innerHeight, backgroundColor: this.props.colors.CAROLINA_BLUE, margin: 25, padding: 30, display: 'flex', flexDirection: 'column', justifyContent: 'center', overflow: 'scroll'}}>
-            <div style={{display: 'flex', flexDirection: 'row', marginTop: 100}}>
+            <div style={{display: 'flex', flexDirection: 'row', marginTop: 160}}>
             <IconButton onClick={() => this.handleStar(1)}>{this.state.stars===0 ? <Icon style={{color: this.props.colors.GOLDENISH, padding:10}}><StarOutline fontSize="large"/></Icon> : <Icon style={{color: this.props.colors.GOLDENISH, padding:10}}><Star fontSize="large"/></Icon>}</IconButton>
             <IconButton onClick={() => this.handleStar(2)}>{this.state.stars<=1 ? <Icon style={{color: this.props.colors.GOLDENISH, padding:10}}><StarOutline fontSize="large"/></Icon> : <Icon style={{color: this.props.colors.GOLDENISH, padding:10}}><Star fontSize="large"/></Icon>}</IconButton>
             <IconButton onClick={() => this.handleStar(3)}>{this.state.stars<=2 ? <Icon style={{color: this.props.colors.GOLDENISH, padding:10}}><StarOutline fontSize="large"/></Icon> : <Icon style={{color: this.props.colors.GOLDENISH, padding:10}}><Star fontSize="large"/></Icon>}</IconButton>
@@ -64,10 +66,18 @@ class NewReview extends React.Component {
             <div style={{display: 'flex', flexDirection: 'row', margin: 10}}>
             <Typography fontSize="28px">vibes:</Typography>
             </div>
-            <div style={{display: 'flex', flexDirection: 'row', margin: 10}}>
-            <ClickableChip colors={this.props.colors} label="#studygrind"/>
+            <div style={{ margin: 10}}>
+            <ClickableChip colors={this.props.colors} label="#study-grind"/>
             <ClickableChip colors={this.props.colors} label="#quirky"/>
-            <ClickableChip colors={this.props.colors} label="#cozy"/>
+            <ClickableChip colors={this.props.colors} label="#loud"/>
+            <ClickableChip colors={this.props.colors} label="#quiet"/>
+            <ClickableChip colors={this.props.colors} label="#date-night"/>
+            <ClickableChip colors={this.props.colors} label="#bar"/>
+            <ClickableChip colors={this.props.colors} label="#parent-approved"/>
+            <ClickableChip colors={this.props.colors} label="#bargain"/>
+            <ClickableChip colors={this.props.colors} label="#fancy"/>
+            <ClickableChip colors={this.props.colors} label="#dive"/>
+            <ClickableChip colors={this.props.colors} label="#game-night"/>
             </div>
             <div style={{display: 'flex', flexDirection: 'row', margin: 10}}>
             <Typography fontSize="28px">leave a comment:</Typography>

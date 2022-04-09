@@ -13,10 +13,11 @@ class SearchResults extends React.Component {
     constructor(props) {
         super(props);
       this.state = {
-
+        selectValue: 10
       };
       this.handleClick = this.handleClick.bind(this);
       this.getRestaurants = this.getRestaurants.bind(this);
+      this.handleChange = this.handleChange.bind(this)
       }
 
       handleClick(event) {
@@ -26,11 +27,13 @@ class SearchResults extends React.Component {
 
               }
           })
-          //console.log(this.props.data.restaurants[event.target.textContent])
-          //this.props.goToRestaurantPage(this.props.data.restaurants[0]);
+      }
+      handleChange(event) {
+          this.setState({
+              selectValue: event.target.value
+          })
       }
       getRestaurants(element) {
-          //console.log(element.name)
           return(<ListItemButton style={{padding: 0 }}onClick={()=>this.handleClick(element.name)}>
             <Result data={element} colors={this.props.colors} />
         </ListItemButton>)
@@ -40,11 +43,16 @@ class SearchResults extends React.Component {
         <div style={{ display: "grid", marginTop: 20, marginLeft:10, width: 300}}>
                 <Typography style={{color: 'white', fontSize: '20px', display: "grid", gridColumn: "1/3", marginTop: 15 }}>{this.props.data.restaurants.length} results found</Typography>
                 <FormControl style={{width: '80%', borderColor: 'white', display: "grid", gridColumn: "5/6", width: 150 }}>
-                    <InputLabel style={{color: 'white'}}>filter by</InputLabel>
-                    <Select style={{borderColor: 'white', color: 'white'}}>
+                    <InputLabel style={{color: 'white'}}>sort by</InputLabel>
+                    <Select 
+                    label="sort by"
+                    value={this.state.selectValue}
+                    onChange={this.handleChange}
+                    style={{borderColor: 'white', color: 'white'}}>
                     <MenuItem value={10}>top rated</MenuItem>
                     <MenuItem value={20}>$-$$$</MenuItem>
                     <MenuItem value={30}>$$$-$</MenuItem>
+                    <MenuItem value={40}>A-Z</MenuItem>
                     </Select>
                 </FormControl>
                 </div>

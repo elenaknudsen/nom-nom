@@ -167,7 +167,7 @@ class BackgroundPage extends React.Component {
           case 'restaurantPage':
             return (<RestaurantPage data={this.state.restaurantInfo} goToReviewPage={this.goToReviewPage} colors={this.props.colors} />);
           case 'newReview': 
-            return (<NewReview goToRestaurantPage={this.goToRestaurantPage} colors={this.props.colors} />);
+            return (<NewReview data={this.state.restaurantInfo} goToRestaurantPage={this.goToRestaurantPage} colors={this.props.colors} />);
           default:
             return (<Homepage data={testData} colors={this.props.colors} />);
         }
