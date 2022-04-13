@@ -21,19 +21,19 @@ class RestaurantCard extends React.Component {
       }
     render () {
         return(<ListItemButton style={{padding: 0 }} onClick={this.handleClick}>
-            <Paper style={{ backgroundColor: this.props.colors.CAROLINA_BLUE, padding: 10,  width: 200, height: 250, marginLeft: 25}} >
-        <Paper style={{ backgroudColor: 'white', height: 160, marginBottom: 25}}></Paper>
+            <Paper style={{ backgroundColor: this.props.colors.CAROLINA_BLUE, padding: 10,  width: 210, height: 310, marginLeft: 25}} >
+            <img alt={this.props.data.name} src={this.props.data.image} style={{width: 210, height: 160}}></img>
         <div class="row">
-            <div class="column" style={{float: 'left'}}>
-                <Typography fontSize="16px">{this.props.data.name}</Typography>
-                <Typography>{this.props.data.cuisine}</Typography>
+            <div class="column" style={{float: 'left', width: '42%'}}>
+                <Typography style={{}} fontSize="18px">{this.props.data.name}</Typography>
+                {this.props.data.cuisine.map(element => <Typography fontSize="14px" >{element}</Typography> )}
             </div>
-            <div class="column" style={{width: 2000}}>
-                <Icon style={{color: this.props.colors.GOLDENISH}}><Star fontSize="small"/></Icon>
-                {this.state.stars>=2 ? <Icon style={{color: this.props.colors.GOLDENISH}}><Star fontSize="small"/></Icon> : <Icon style={{color: this.props.colors.GOLDENISH}}><StarOutline fontSize="small"/></Icon>}
-                {this.state.stars>=3 ? <Icon style={{color: this.props.colors.GOLDENISH}}><Star fontSize="small"/></Icon> : <Icon style={{color: this.props.colors.GOLDENISH}}><StarOutline fontSize="small"/></Icon>}
-                {this.state.stars>=4 ? <Icon style={{color: this.props.colors.GOLDENISH}}><Star fontSize="small"/></Icon> : <Icon style={{color: this.props.colors.GOLDENISH}}><StarOutline fontSize="small"/></Icon>}
-                {this.state.stars>=5 ? <Icon style={{color: this.props.colors.GOLDENISH}}><Star fontSize="small"/></Icon> : <Icon style={{color: this.props.colors.GOLDENISH}}><StarOutline fontSize="small"/></Icon>}
+            <div class="column" style={{}}>
+                <Icon style={{color: this.props.colors.GOLDENISH, transform: 'scale(.75)'}}><Star/></Icon>
+                {this.state.stars>=2 ? <Icon style={{color: this.props.colors.GOLDENISH, transform: 'scale(.75)'}}><Star/></Icon> : <Icon style={{color: this.props.colors.GOLDENISH, transform: 'scale(.75)'}}><StarOutline/></Icon>}
+                {this.state.stars>=3 ? <Icon style={{color: this.props.colors.GOLDENISH, transform: 'scale(.75)'}}><Star/></Icon> : <Icon style={{color: this.props.colors.GOLDENISH, transform: 'scale(.75)'}}><StarOutline/></Icon>}
+                {this.state.stars>=4 ? <Icon style={{color: this.props.colors.GOLDENISH, transform: 'scale(.75)'}}><Star/></Icon> : <Icon style={{color: this.props.colors.GOLDENISH, transform: 'scale(.75)'}}><StarOutline/></Icon>}
+                {this.state.stars>=5 ? <Icon style={{color: this.props.colors.GOLDENISH, transform: 'scale(.75)'}}><Star/></Icon> : <Icon style={{color: this.props.colors.GOLDENISH, transform: 'scale(.75)'}}><StarOutline/></Icon>}
 
             </div>
         </div>

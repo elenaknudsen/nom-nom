@@ -26,20 +26,20 @@ class HomePage extends React.Component {
         </div>
         <div style={{ textAlign: 'left', marginLeft: '5%', marginTop: '3%' }}>
             <Typography style={{marginLeft: 25, fontSize: '24px', padding: 10, color: 'white'}}>cheap eats</Typography>
-            <div style={{ display: 'flex', flexDirection: 'row', width: 1600, overflowX: 'scroll'}}> 
+            <div style={{ display: 'flex', flexDirection: 'row', overflowX: 'scroll'}}> 
                 {this.props.data.restaurants.map(element => this.generateCards(element))}
             </div>
         </div>
-        <div style={{ textAlign: 'left', width:'100%', marginLeft: '5%', marginTop: '3%'}}>
+        <div style={{ textAlign: 'left', marginLeft: '5%', marginTop: '3%'}}>
             <Typography style={{marginLeft: 25, fontSize: '24px', padding: 10, color: 'white'}}>chapel hill classics</Typography>
-            <div style={{ display: 'flex', flexDirection: 'row', width: 1600, overflowX: 'scroll'}}> 
+            <div style={{ display: 'flex', flexDirection: 'row', overflowX: 'scroll'}}> 
             {this.props.data.restaurants.map(element => this.generateCards(element))}
 
             </div>
         </div>
-        <div style={{ textAlign: 'left', width:'100%', marginLeft: '5%', marginTop: '3%' }}>
+        <div style={{ textAlign: 'left', marginLeft: '5%', marginTop: '3%' }}>
             <Typography style={{marginLeft: 25, fontSize: '24px', padding: 10, color: 'white'}}>local favorites</Typography>
-            <div style={{ display: 'flex', flexDirection: 'row', width: 1600, overflowX: 'scroll', marginBottom: 100}}> 
+            <div style={{ display: 'flex', flexDirection: 'row', overflowX: 'scroll', marginBottom: 100}}> 
             {this.props.data.restaurants.map(element => this.generateCards(element))}
             </div>
         </div>

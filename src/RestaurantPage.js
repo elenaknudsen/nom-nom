@@ -59,28 +59,22 @@ class RestaurantPage extends React.Component {
     render () {
         return(<>
         <Paper style={{width: 300, backgroundColor: this.props.colors.CAROLINA_BLUE, margin: 25, padding: 20, overflow: 'scroll'}}>
-        <div class="row" style={{display: 'flex', flexDirection: 'row'}}>
-            <Paper style={{ backgroudColor: 'white', height: 100, width: 100}}/>
-            <Paper style={{ backgroudColor: 'white', height: 100, width: 100}}/>
-            <Paper style={{ backgroudColor: 'white', height: 100, width: 100}}/>
-        </div>
-        <div style={{ display: "grid", marginLeft:10, marginTop:10 }}>
-        <Typography fontSize="32px" style={{ display: "grid", gridColumn: "1/3" }}>{this.props.data.name}</Typography>
-        <Typography fontSize="24px" style={{ display: "grid", gridColumn: "4/5", marginTop: 7 }}>{this.props.data.price}</Typography>
-        </div>
-        <div style={{padding: 10 }}>
-        <Icon style={{color: this.props.colors.GOLDENISH, padding: 10}}><Star fontSize="large"/></Icon>
+        <img alt={this.props.data.name} src={this.props.data.image} style={{width: 300, height: 200}}></img>
+        <Typography fontSize="32px" style={{ marginTop: 20 }}>{this.props.data.name}</Typography>
+        <div style={{padding: 10, display: 'flex', flexDirection: 'row' }}>
+        <Typography fontSize="24px" style={{  marginTop: 10 }}>{this.props.data.price}</Typography>
+            <div style={{marginLeft: 30, width: '80%'}}>
+            <Icon style={{color: this.props.colors.GOLDENISH, padding: 10}}><Star fontSize="large"/></Icon>
                 {this.state.stars>=2 ? <Icon style={{color: this.props.colors.GOLDENISH, padding: 10}}><Star fontSize="large"/></Icon> : <Icon style={{color: this.props.colors.GOLDENISH, padding: 10}}><StarOutline fontSize="large"/></Icon>}
                 {this.state.stars>=3 ? <Icon style={{color: this.props.colors.GOLDENISH, padding: 10}}><Star fontSize="large"/></Icon> : <Icon style={{color: this.props.colors.GOLDENISH, padding: 10}}><StarOutline fontSize="large"/></Icon>}
                 {this.state.stars>=4 ? <Icon style={{color: this.props.colors.GOLDENISH, padding: 10}}><Star fontSize="large"/></Icon> : <Icon style={{color: this.props.colors.GOLDENISH, padding: 10}}><StarOutline fontSize="large"/></Icon>}
                 {this.state.stars>=5 ? <Icon style={{color: this.props.colors.GOLDENISH, padding: 10}}><Star fontSize="large"/></Icon> : <Icon style={{color: this.props.colors.GOLDENISH, padding: 10}}><StarOutline fontSize="large"/></Icon>}
+            </div>
         </div>
-        <div style={{ display: "grid", marginLeft: 10 }}>
-        <Typography fontSize="16px" style={{ display: "grid", gridColumn: "1/3" }}>{this.props.data.hours}</Typography>
-        <Typography fontSize="16px" style={{ display: "grid", gridColumn: "5/6" }}>{this.props.data.sitTime} wait</Typography>
-        </div>
-        <div style={{ display: "grid", marginLeft: 10 }}>
-        <Typography fontSize="16px" style={{ display: "grid", gridColumn: "1/3" }}>{this.props.data.cuisine}</Typography>
+        <Typography fontSize="14px" style={{ marginLeft: 10 }}>{this.props.data.hours}</Typography>
+        <Typography fontSize="14px" style={{ marginLeft: 10}}>{this.props.data.sitTime} wait</Typography>
+        <div style={{ marginLeft: 10 }}>
+        {this.props.data.cuisine.map(element => <Typography fontSize="14px" style={{ display: "grid", gridColumn: "4/5" }}>{element}</Typography> )}
         {this.props.data.dietRange.map(element => <Typography fontSize="14px" style={{ display: "grid", gridColumn: "4/5" }}>{element}</Typography> )}
         </div>
         <div style={{ display: "flex", flexDirection: "row", margin: 10 }}>

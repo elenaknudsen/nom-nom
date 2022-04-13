@@ -1,0 +1,491 @@
+{
+    "restaurants": [
+        {
+            "name": "TRU",
+            "image": "https://media-cdn.tripadvisor.com/media/photo-s/03/02/5c/db/tru-deli.jpg",
+            "cuisine": ["American", "Deli", "Wine Bar"],
+            "hours": "Kitchen: Mon-Sun 11am-9pm\nBar: Sun-Thur 11am-11pm, Fri-Sat 11am-12pm",
+            "price": "$$",
+            "dietRange": [
+                "vegetarian"
+            ],
+            "website": "https://www.trudeli.com/",
+            "directions": "https://goo.gl/maps/R1Q2vVqdS6Kjv6of9",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+                "Bar",
+                "Parent Approved"
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Imbibe",
+            "image": "https://images.squarespace-cdn.com/content/v1/5d31dfb2f543d400017d3949/1563718768006-53G4B9XNHA9SU2O2G2PZ/imbibe%2Bbooths.jpg?format=1000w",
+            "cuisine": ["Wine Bar"],
+            "hours": "Mon-Sat 5pm-10pm",
+            "price": "$$",
+            "dietRange": [
+                "None"
+            ],
+            "website": "https://www.facebook.com/bosshillbeerandwine/",
+            "directions": "https://goo.gl/maps/dSPfhKPevM1qRzv5A",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Time-Out Restaurant",
+            "image": "https://spoonuniversity.com/wp-content/uploads/sites/51/2014/11/IMG_70921-1024x682.jpg",
+            "cuisine": ["American", "Bar"],
+            "hours": "24/7",
+            "price": "$$",
+            "dietRange": [
+                "None"
+            ],
+            "website": "http://timeout247.com/",
+            "directions": "https://goo.gl/maps/7DXpSDsqs7FvERye6",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Four Corners",
+            "image": "https://assets.simpleviewinc.com/simpleview/image/fetch/c_fill,h_411,q_75,w_620/https://assets.dam.simpleviewinc.com/asset/6181636ce6e035006b34c7dd",
+            "cuisine": ["American", "Bar"],
+            "hours": "Sun-Thur 10am-12am, Fri-Sat 11am-2am",
+            "price": "$$",
+            "dietRange": [
+                "None"
+            ],
+            "website": "https://fourcornersgrille.com/",
+            "directions": "https://goo.gl/maps/LdJtKhfqqdFTXQhP6",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "GRK Yeero",
+            "image": "https://img.cdn4dd.com/p/fit=cover,width=1200,height=1200,format=jpeg,quality=50/media/photos/71c3df06-002d-4885-ab48-5b58aa55897d-retina-large-jpeg",
+            "cuisine": ["Greek", "Mediterranean"],
+            "hours": "Mon-Sat 11am-3am, Sun 11am-9pm",
+            "price": "$$",
+            "dietRange": [
+                "Vegetarian",
+                "Vegan"
+            ],
+            "website": "http://www.grkyeero.com/",
+            "directions": "https://g.page/grkyeero?share",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Pirate Captain",
+            "image": "https://www.piratecaptainch.com/wp-content/uploads/piratecaptainch.com/2022/04/a02.jpg",
+            "cuisine": ["Japanese", "Seafood", "Smoothie"],
+            "hours": "Sun-Thurs 11am-10pm, Fri-Sat 11am-10:30pm",
+            "price": "$$",
+            "dietRange": [
+                "Vegetarian",
+                "Vegan"
+            ],
+            "website": "https://www.piratecaptainch.com/",
+            "directions": "https://goo.gl/maps/nsDQASDPYqFsnm6g6",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Sutton's Drug Store",
+            "image": "https://indyweek.com/downloads/19304/download/suttons_photo4.jpe?cb=f4c957f9e7b68350f76f7ccc0e4b2b20&w=1800",
+            "cuisine": ["American", "Diner"],
+            "hours": "Mon-Sat 7am-2:30pm, Sun 9am-2:30pm",
+            "price": "$",
+            "dietRange": [
+                "None"
+            ],
+            "website": "http://suttonsdrugstore.com/",
+            "directions": "https://goo.gl/maps/x8FFDM2HCZ8dTmaQ8",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Hibachi and Company",
+            "image": "https://s3-media0.fl.yelpcdn.com/bphoto/cieGi3s0O1AeMC-Nuoc_rA/348s.jpg",
+            "cuisine": ["Japanese", "Asian"],
+            "hours": "Mon-Sun 11am-9pm",
+            "price": "$",
+            "dietRange": [
+                "None"
+            ],
+            "website": "http://hibachicompany.com/",
+            "directions": "https://goo.gl/maps/NJpe37cSqS6DLsr66",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Yaya Tea",
+            "image": "https://assets.simpleviewinc.com/simpleview/image/fetch/c_fill,h_411,q_75,w_620/https://assets.dam.simpleviewinc.com/asset/618163fae6e035006b34c8b8",
+            "cuisine": ["Japanese", "Boba"],
+            "hours": "Mon-Sun 11am-8pm",
+            "price": "$",
+            "dietRange": [
+                "None"
+            ],
+            "website": "http://yayatea.com/",
+            "directions": "https://g.page/YayaTeaChapelHill?share",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Moge Tea",
+            "image": "https://assets.dam.simpleviewinc.com/asset/61816482e6e035006b34ca10",
+            "cuisine": ["Boba"],
+            "hours": "Sun-Thurs 10:30am-9pm, Fri-Sat 10:30am-9:30pm",
+            "price": "$",
+            "dietRange": [
+                "None"
+            ],
+            "website": "https://www.mogeteechapelhill.com/",
+            "directions": "https://g.page/moge-tee-chapel-hill?share",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Goodfellows",
+            "image": "https://s3-media0.fl.yelpcdn.com/bphoto/-G7Me94B4ebmaWY0BYYd0A/l.jpg",
+            "cuisine": ["Bar", "American"],
+            "hours": "Tues-Sun 7pm-2am, Mon 8pm-2am",
+            "price": "$$",
+            "dietRange": [
+                "None"
+            ],
+            "website": "https://goodfellowschapelhill.com/",
+            "directions": "https://goo.gl/maps/2SgBoFRSWGxm2jRs8",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Dame's Chicken and Waffles",
+            "image": "https://i.pinimg.com/736x/b8/76/29/b87629fe1ffc7e74f75a2bd042f86df1--breakfast-for-dinner-dinner-options.jpg",
+            "cuisine": ["American", "Diner"],
+            "hours": "Tues-Sat 11am-8pm, Sun 10am-2pm",
+            "price": "$$",
+            "dietRange": [
+                "None"
+            ],
+            "website": "https://dameschickenwaffles.com/",
+            "directions": "https://goo.gl/maps/AHgTsrci1QBHmRg96",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Shanghai Dumpling",
+            "image": "https://assets.simpleviewinc.com/simpleview/image/fetch/c_fill,h_396,q_75,w_704/https://assets.dam.simpleviewinc.com/asset/618162ebe6e035006b34c6e4",
+            "cuisine": ["Chinese", "Asian"],
+            "hours": "Mon-Sun 11am-9pm",
+            "price": "$$",
+            "dietRange": [
+                "None"
+            ],
+            "website": "https://shanghaidumplingch.com/",
+            "directions": "https://goo.gl/maps/3gVz5DVPbgVciFi1A",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Insomnia Cookies",
+            "image": "https://assets.simpleviewinc.com/simpleview/image/fetch/c_limit,h_1200,q_75,w_1200/https://assets.dam.simpleviewinc.com/asset/618163fee6e035006b34c8da",
+            "cuisine": ["Sweets"],
+            "hours": "Mon-Wed 11am-1am, Thurs-Fri 11am-3am, Sat 12am-3am, Sun 12am-1am",
+            "price": "$",
+            "dietRange": [
+                "None"
+            ],
+            "website": "https://insomniacookies.com/goto/store/1079",
+            "directions": "https://g.page/insomnia-cookies-chapel-hill?share",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Cold Stone Creamery",
+            "image": "https://d1ralsognjng37.cloudfront.net/8abbad9a-40c1-4342-8e3b-fd2dbe2764a4",
+            "cuisine": ["Sweets"],
+            "hours": "Sun-Thurs 12pm-10pm, Fri-Sat 12pm-10:30pm",
+            "price": "$$",
+            "dietRange": [
+                "None"
+            ],
+            "website": "https://www.coldstonecreamery.com/stores/20861",
+            "directions": "https://g.page/Ice-cream-shop-chapel-hill?share",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "The Blue Horn Lounge",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb3b6BcGtcukSLYaJIkbyvJ2BqvKITZoA-lA&usqp=CAU",
+            "cuisine": ["Bar", "American"],
+            "hours": "Mon-Sun 2pm-2am",
+            "price": "$$",
+            "dietRange": [
+                "None"
+            ],
+            "website": "https://www.facebook.com/bluehornlounge/",
+            "directions": "https://goo.gl/maps/8M8DPCdN8wFpUJbJA",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Epilogue",
+            "image": "https://www.graduatehotels.com/chapel-hill/wp-content/uploads/sites/35/2021/05/ChapelHill_Epilogue-Books-scaled-640x480-c-default.jpg",
+            "cuisine": ["Coffee", "Mexican", "Sweets"],
+            "hours": "Mon-Wed 7am-11pm, Thurs-Fri 7am-9pm, Sat 8am-9pm, Sun 9am-7pm",
+            "price": "$$",
+            "dietRange": [
+                "None"
+            ],
+            "website": "https://epiloguebookcafe.com/",
+            "directions": "https://g.page/epiloguebooksch?share",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Sup Dogs",
+            "image": "https://www.nctriangledining.com/wp-content/uploads/2017/07/SupDogs-WesternSmokehouseDogsCheeseFries.jpg",
+            "cuisine": ["Bar", "American"],
+            "hours": "Sat-Tues 11am-12am, Wed-Fri 11am-3am",
+            "price": "$$",
+            "dietRange": [
+                "None"
+            ],
+            "website": "https://supdogs.com/",
+            "directions": "https://g.page/SupDogsUNC?share",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Momo's Master",
+            "image": "https://assets.simpleviewinc.com/simpleview/image/fetch/c_fill,h_411,q_75,w_620/https://assets.dam.simpleviewinc.com/asset/61c233d274266d02e93b8d85",
+            "cuisine": ["Asian", "Himalayan", "Indian"],
+            "hours": "Mon-Thur 2pm-9pm, Fri-Sat 12pm-9:30pm",
+            "price": "$$",
+            "dietRange": [
+                "Vegetarian",
+                "Vegan",
+                "Gluten-Free"
+            ],
+            "website": "http://www.momosmaster.com/",
+            "directions": "https://goo.gl/maps/ddXPg56TNnbmNL9B8",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Starbucks",
+            "image": "https://cdn.usarestaurants.info/assets/uploads/148c704e008caab3b5dc84f8cfeca2e2_-united-states-north-carolina-orange-county-chapel-hill-starbucks-919-932-3824htm.jpg",
+            "cuisine": ["Coffee", "Sweets"],
+            "hours": "Mon-Sat 6am-9pm, Sun 6:30am-9pm",
+            "price": "$$",
+            "dietRange": [
+                "None"
+            ],
+            "website": "https://www.starbucks.com/store-locator/store/15341/",
+            "directions": "https://goo.gl/maps/1cCugj9Q5Db8Rwuw6",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Carolina Coffee Shop",
+            "image": "https://roadfood.com/wp-content/uploads/2019/07/IMG_0968.jpg",
+            "cuisine": ["American", "Bar", "Coffee"],
+            "hours": "Mon-Sun 8am-3pm",
+            "price": "$$",
+            "dietRange": [
+                "Vegetarian"
+            ],
+            "website": "http://www.carolinacoffeeshop.com/",
+            "directions": "https://goo.gl/maps/Geia6ejixGscBsnC8",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Curry Point Express",
+            "image": "https://d1ralsognjng37.cloudfront.net/81732d85-5e66-485a-ae0c-25be24502442.jpeg",
+            "cuisine": ["Indian", "Asian"],
+            "hours": "Mon-Sun 11am-9pm",
+            "price": "$$",
+            "dietRange": [
+                "Vegetarian"
+            ],
+            "website": "http://currypointexpresstogo.com/",
+            "directions": "https://goo.gl/maps/6pG2yhZV7F7tpJe36",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Top of the Hill",
+            "image": "https://images.squarespace-cdn.com/content/v1/537261a3e4b06f7436cc8d37/1595454416162-MZYP2PMOSG0W7T5BJPD4/TOPO+-+Exterior+8.jpg",
+            "cuisine": ["American", "Bar"],
+            "hours": "Wed 12pm-12am, Thurs-Sat 12pm-2am, Sun 11am-10pm, Mon 12pm-10pm",
+            "price": "$$",
+            "dietRange": [
+                "Vegetarian",
+                "Vegan",
+                "Gluten-Free"
+            ],
+            "website": "http://www.thetopofthehill.com/",
+            "directions": "https://goo.gl/maps/ykQ3D3ei7TU4YVAt8",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Buns",
+            "image": "http://bunsofchapelhill.com/wp-content/uploads/2014/05/greetings.jpg",
+            "cuisine": ["American", "Sweets"],
+            "hours": "Tues-Sun 11am-9pm",
+            "price": "$",
+            "dietRange": [
+                "Vegetarian",
+                "Vegan",
+                "Gluten-Free"
+            ],
+            "website": "http://bunsofchapelhill.com/",
+            "directions": "https://goo.gl/maps/Z8UxhV8VqdjiTbty7",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Kurama Sushi and Noodle Express",
+            "image": "https://indyweek.com/downloads/15443/download/160114_ab_indy_kurama_0034.jpe?cb=f4c957f9e7b68350f76f7ccc0e4b2b20",
+            "cuisine": ["Chinese", "Asian"],
+            "hours": "Sun-Tues & Thurs 11:30am-8pm, Fri-Sat 11:30am-9pm",
+            "price": "$",
+            "dietRange": [
+                "Vegetarian",
+                "Vegan",
+                "Gluten-Free"
+            ],
+            "website": "https://www.kuramasushinoodle.com/",
+            "directions": "https://goo.gl/maps/ko1oTj8VDYm3fw3b6",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        }
+    ]
+}
