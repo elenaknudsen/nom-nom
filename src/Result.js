@@ -10,7 +10,7 @@ class Result extends React.Component {
         return(<Paper style={{ backgroundColor: this.props.colors.CAROLINA_BLUE, padding: 10,  width: '90%', height: 190, margin: 10}} >
          <div class="row">
             <div class="column" style={{float: 'left', width: 140, marginRight: 10}}>
-            <Paper style={{ backgroudColor: 'white', height: 130, marginBottom: 25}}></Paper>
+            <img alt={this.props.data.name} src={this.props.data.image} style={{width: 140, height: 130}}></img>
             </div>
             <div class="column" style={{marginTop: 10}}>
                 <Typography style={{}} fontSize="24px">{this.props.data.name}</Typography>
