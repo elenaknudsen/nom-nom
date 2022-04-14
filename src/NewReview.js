@@ -80,12 +80,13 @@ class NewReview extends React.Component {
             <ClickableChip colors={this.props.colors} label="#game-night"/>
             </div>
             <div style={{display: 'flex', flexDirection: 'row', margin: 10}}>
-            <Typography fontSize="28px">leave a comment:</Typography>
             </div>
             <div style={{display: 'flex', flexDirection: 'row', margin: 10}}>
             <Typography fontSize="20px" style={{marginLeft:20, marginTop: 10}}>title:</Typography>
             <TextField style={{marginLeft: 20}} ></TextField>
             </div>
+            <Typography fontSize="20px" style={{marginLeft:30, marginTop: 10}}>review:</Typography>
+
             <div style={{display: 'flex', flexDirection: 'row', margin: 10}}>
             <TextField multiline={true} rows={4} style={{marginLeft: 20, width: 400}}></TextField>
             </div>

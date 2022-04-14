@@ -60,55 +60,42 @@ class RestaurantPage extends React.Component {
         return(<>
         <Paper style={{width: 300, backgroundColor: this.props.colors.CAROLINA_BLUE, margin: 25, padding: 20, overflow: 'scroll'}}>
         <img alt={this.props.data.name} src={this.props.data.image} style={{width: 300, height: 200}}></img>
-        <Typography fontSize="32px" style={{ marginTop: 20 }}>{this.props.data.name}</Typography>
-        <div style={{padding: 10, display: 'flex', flexDirection: 'row' }}>
-        <Typography fontSize="24px" style={{  marginTop: 10 }}>{this.props.data.price}</Typography>
-            <div style={{marginLeft: 30, width: '80%'}}>
+        <Typography fontSize="32px" style={{ marginTop: 20, fontWeight: 'bold', color: 'white' }}>{this.props.data.name}</Typography>
+        <div style={{ display: 'flex', flexDirection: 'row' }}>
+            <div>
             <Icon style={{color: this.props.colors.GOLDENISH, padding: 10}}><Star fontSize="large"/></Icon>
                 {this.state.stars>=2 ? <Icon style={{color: this.props.colors.GOLDENISH, padding: 10}}><Star fontSize="large"/></Icon> : <Icon style={{color: this.props.colors.GOLDENISH, padding: 10}}><StarOutline fontSize="large"/></Icon>}
                 {this.state.stars>=3 ? <Icon style={{color: this.props.colors.GOLDENISH, padding: 10}}><Star fontSize="large"/></Icon> : <Icon style={{color: this.props.colors.GOLDENISH, padding: 10}}><StarOutline fontSize="large"/></Icon>}
                 {this.state.stars>=4 ? <Icon style={{color: this.props.colors.GOLDENISH, padding: 10}}><Star fontSize="large"/></Icon> : <Icon style={{color: this.props.colors.GOLDENISH, padding: 10}}><StarOutline fontSize="large"/></Icon>}
                 {this.state.stars>=5 ? <Icon style={{color: this.props.colors.GOLDENISH, padding: 10}}><Star fontSize="large"/></Icon> : <Icon style={{color: this.props.colors.GOLDENISH, padding: 10}}><StarOutline fontSize="large"/></Icon>}
             </div>
+            <Typography fontSize="24px" style={{ marginLeft: 30, marginTop: 10, color: 'white' }}>{this.props.data.price}</Typography>
+
         </div>
-        <Typography fontSize="14px" style={{ marginLeft: 10 }}>{this.props.data.hours}</Typography>
-        <Typography fontSize="14px" style={{ marginLeft: 10}}>{this.props.data.sitTime} wait</Typography>
-        <div style={{ marginLeft: 10 }}>
-        {this.props.data.cuisine.map(element => <Typography fontSize="14px" style={{ display: "grid", gridColumn: "4/5" }}>{element}</Typography> )}
-        {this.props.data.dietRange.map(element => <Typography fontSize="14px" style={{ display: "grid", gridColumn: "4/5" }}>{element}</Typography> )}
+        <Typography style={{color: 'white', marginTop: 10}}fontSize="14px">{this.props.data.hours}</Typography>
+        <Typography style={{color: 'white', marginTop: 10}}fontSize="14px">{this.props.data.sitTime} wait</Typography>
+        <div style={{marginTop: 10}}>
+        {this.props.data.cuisine.map(element => <Typography fontSize="14px" style={{ display: "grid", gridColumn: "4/5", color: 'white' }}>{element}</Typography> )}
         </div>
-        <div style={{ display: "flex", flexDirection: "row", margin: 10 }}>
-        <Chip onClick={this.chipClick} style={{color: 'white'}} label="website"/>
-        <Chip onClick={this.chipClick} style={{color: 'white'}} label="directions"/>
+        <div style={{marginTop: 10}}>
+        {this.props.data.dietRange.map(element => <Typography fontSize="14px" style={{ display: "grid", gridColumn: "4/5", color: 'white' }}>{element}</Typography> )}
         </div>
-        <div style={{display: 'flex', flexDirection: 'row', margin: 10}}>
-        <Typography fontSize="32px">vibes:</Typography>
+        <div style={{ display: "flex", flexDirection: "row", marginTop: 10 }}>
+        <Chip onClick={this.chipClick} style={{color: 'white', backgroundColor: this.props.colors.GREENISH}} label="website"/>
+        <Chip onClick={this.chipClick} style={{color: 'white', backgroundColor: this.props.colors.GREENISH}} label="directions"/>
         </div>
-        <div style={{ margin: 10}}>
+        <div style={{display: 'flex', flexDirection: 'row', marginTop: 10 }}>
+        <Typography style={{color: 'white'}} fontSize="32px">vibes:</Typography>
+        </div>
+        <div style={{marginTop: 10}}>
         {this.props.data.vibes.map(element => this.generateVibes(element))}
         </div>
-        <div style={{display: 'flex', flexDirection: 'column'}}>
-        <List>
-            <ListItem>
-                <Button variant="contained" style={{backgroundColor: this.props.colors.GREENISH}} onClick={this.handleClick}>leave a review</Button>
-            </ListItem>
-        </List>
-        
+        <Button variant="contained" style={{backgroundColor: this.props.colors.GREENISH}} onClick={this.handleClick}>leave a review</Button>
+        <div style={{display: 'flex', flexDirection: 'row', marginTop: 10 }}>
+        <Typography fontSize="32px" style={{marginTop: 15, color: 'white'}}>reviews:</Typography>
         </div>
-        <div style={{display: 'flex', flexDirection: 'row', margin: 10}}>
-        <Typography fontSize="16px" style={{marginTop: 15}}>reviews:</Typography>
-        <FormControl style={{width: 200, marginLeft: 20}}>
-        <InputLabel>sort by</InputLabel>
-        <Select
-        label="sort by"
-        value={this.state.selectValue}
-        onChange={this.handleChange}>
-          <MenuItem value={10}>upvotes</MenuItem>
-          <MenuItem value={20}>recent</MenuItem>
-        </Select>
-      </FormControl>
-        </div>
-        <div style={{display: 'flex', flexDirection: 'column', margin: 10, overflow: 'scroll', gap: 10}}>
+        <div style={{display: 'flex', flexDirection: 'column', overflow: 'scroll', gap: 10}}>
+            {this.state.key.length==0 ? <Typography fontSize="16px" style={{marginTop: 15, marginLeft: 5, color: 'white'}}>no reviews yet</Typography> : <></>}
             {this.state.key.map(element => this.generateReviews(element))}
         </div>
 

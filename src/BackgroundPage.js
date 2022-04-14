@@ -6,6 +6,7 @@ import SearchResults from './SearchResults';
 import SearchFilters from './SearchFilters';
 import RestaurantPage from './RestaurantPage';
 import NewReview from './NewReview';
+import BottomNavbar from './BottomNavbar';
 
 const testData = require('./TestData.json');
 
@@ -25,6 +26,7 @@ class BackgroundPage extends React.Component {
       this.goToRestaurantPage = this.goToRestaurantPage.bind(this);
       this.goToReviewPage = this.goToReviewPage.bind(this);
       this.goToSearchResults = this.goToSearchResults.bind(this);
+      this.goToHomepage = this.goToHomepage.bind(this);
       }
       
 
@@ -79,6 +81,15 @@ class BackgroundPage extends React.Component {
             page: 'newReview',
         })
     }
+    goToHomepage(event) {
+        let temp = this.state.prevPage;
+        temp.push(this.state.page)
+        this.setState({
+            page: 'homepage',
+            prevPage: temp
+
+        })
+    }
 
     onBackButton(event) {
         let temp = this.state.prevPage;
@@ -99,6 +110,8 @@ class BackgroundPage extends React.Component {
         return(<>
          <Navbar colors={this.props.colors} prevPage={this.state.prevPage} currentPage={this.state.page} onBackButton={this.onBackButton} onSearchClick={this.onSearchClick}/>
          {this.renderSwitch(this.state.page)}
+         <BottomNavbar colors={this.props.colors} prevPage={this.state.prevPage} currentPage={this.state.page} goToHomepage={this.goToHomepage} onSearchClick={this.onSearchClick}/>
+
         </>)
     }
 }

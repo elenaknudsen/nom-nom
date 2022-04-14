@@ -25,7 +25,7 @@ class Navbar extends React.Component {
       }
 
     render () {
-        return(<Paper style={{ backgroundColor: this.props.colors.CAROLINA_BLUE, width: '110%', textAlign: 'center'}} >
+        return(<Paper style={{ borderWidthBottom: '30px', borderColor: this.props.colors.NAVY_BLUE, borderStyle: 'solid', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)', backgroundColor: this.props.colors.CAROLINA_BLUE, width: '110%', textAlign: 'center'}} >
         <Typography style={{fontSize: '32px', color: 'white'}} m={2}>
         {this.props.prevPage.length!==0 && this.props.currentPage!=='newReview' ? <IconButton onClick={this.handleBack}><Icon style={{color: 'white'}}><ArrowBackIcon/></Icon></IconButton> : <></>}
         {this.props.currentPage==='searchFilters' ? <TextField></TextField> : <>nom nom</>}

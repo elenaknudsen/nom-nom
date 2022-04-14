@@ -31,7 +31,7 @@ class HomePage extends React.Component {
             </div>
         </div>
         <div style={{ textAlign: 'left', marginLeft: '5%', marginTop: '3%'}}>
-            <Typography style={{marginLeft: 25, fontSize: '24px', padding: 10, color: 'white'}}>chapel hill classics</Typography>
+            <Typography style={{marginLeft: 25, fontSize: '24px', padding: 10, color: 'white'}}>iconic chapel hill spots</Typography>
             <div style={{ display: 'flex', flexDirection: 'row', overflowX: 'scroll'}}> 
             {this.props.data.restaurants.map(element => this.generateCards(element))}
 

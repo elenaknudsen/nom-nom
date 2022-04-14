@@ -27,15 +27,10 @@ class CollapseElement extends React.Component {
         }
 
         generateCheckboxes(element){
-            if(this.props.title==='vibes') {
-                return (<ClickableChip colors={this.props.colors} label={element} />)
-            }else {
             return (<ListItem sx={{ pl: 4 }}>
                 <Checkbox checked={this.props.clearFilters}></Checkbox>
                 <ListItemText>{element}</ListItemText>
-            </ListItem>)
-            }
-            
+            </ListItem>)            
         }
     render () {
         return(<>
