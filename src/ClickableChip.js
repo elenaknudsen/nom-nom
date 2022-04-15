@@ -17,7 +17,7 @@ class ClickableChip extends React.Component {
       }
     render () {
         return(
-        <Chip variant="filled" label={this.props.label} onClick={this.handleClick} style={{color: 'white', backgroundColor: this.state.selected ? this.props.colors.GREENISH : '#00000014'}}/>
+        <Chip variant="filled" label={this.props.label} onClick={this.handleClick} style={{color: 'white', backgroundColor: this.state.selected ? this.props.colors.ACCENT : '#00000014'}}/>
                 )
     }
 }

@@ -30,7 +30,7 @@ class SearchFilters extends React.Component {
     render () {
         return(<div style={{width: window.innerWidth, height: window.innerHeight, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', overflowY: 'scroll'}}>
         <List style={{backgroundColor: this.props.colors.CAROLINA_BLUE, color: 'white', overflow: 'scroll', margin: 20, paddingTop: 0, width: 300 }}>
-            <ListItem style={{backgroundColor: this.props.colors.GREENISH, padding: 20}}>
+            <ListItem style={{backgroundColor: this.props.colors.ACCENT, padding: 20}}>
                 <ListItemText  primaryTypographyProps={{fontSize: '24px'}} >filters</ListItemText>
             </ListItem>
             <CollapseElement title={'price'} options={['cheap eats ($)', 'mid-range ($$)', 'high-end ($$$)']}/>
@@ -45,8 +45,8 @@ class SearchFilters extends React.Component {
             <CollapseElement title={'predicted wait times'} options={['fewer than 5 minutes', 'fewer than 10 minutes', 'fewer than 30 minutes']}/>
             <CollapseElement colors={this.props.colors} title={'vibes'} options={['#study-vibes', '#quirky', '#loud', '#quiet', '#date-night', '#bar', '#parent-approved', '#bargain', '#fancy', '#dive', '#game-night']}/>
             <ListItem style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', padding: 10}}>
-                <Button variant="contained" onClick={this.handleClick} style={{backgroundColor: this.props.colors.GREENISH}}>clear all filters</Button>
-                <Button variant="contained" onClick={this.handleSearch} style={{backgroundColor: this.props.colors.GREENISH}}>search</Button>
+                <Button variant="contained" onClick={this.handleClick} style={{backgroundColor: this.props.colors.ACCENT}}>clear all filters</Button>
+                <Button variant="contained" onClick={this.handleSearch} style={{backgroundColor: this.props.colors.ACCENT}}>search</Button>
             </ListItem>
         </List>
         </div>)

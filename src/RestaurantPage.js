@@ -81,16 +81,16 @@ class RestaurantPage extends React.Component {
         {this.props.data.dietRange.map(element => <Typography fontSize="14px" style={{ display: "grid", gridColumn: "4/5", color: 'white' }}>{element}</Typography> )}
         </div>
         <div style={{ display: "flex", flexDirection: "row", marginTop: 10 }}>
-        <Chip onClick={this.chipClick} style={{color: 'white', backgroundColor: this.props.colors.GREENISH}} label="website"/>
-        <Chip onClick={this.chipClick} style={{color: 'white', backgroundColor: this.props.colors.GREENISH}} label="directions"/>
+        <Chip onClick={this.chipClick} style={{color: 'white', backgroundColor: this.props.colors.ACCENT}} label="website"/>
+        <Chip onClick={this.chipClick} style={{color: 'white', backgroundColor: this.props.colors.ACCENT}} label="directions"/>
         </div>
         <div style={{display: 'flex', flexDirection: 'row', marginTop: 10 }}>
         <Typography style={{color: 'white'}} fontSize="32px">vibes:</Typography>
         </div>
-        <div style={{marginTop: 10}}>
+        <div style={{marginTop: 10, marginBottom: 20}}>
         {this.props.data.vibes.map(element => this.generateVibes(element))}
         </div>
-        <Button variant="contained" style={{backgroundColor: this.props.colors.GREENISH}} onClick={this.handleClick}>leave a review</Button>
+        <Button variant="contained" style={{backgroundColor: this.props.colors.ACCENT}} onClick={this.handleClick}>leave a review</Button>
         <div style={{display: 'flex', flexDirection: 'row', marginTop: 10 }}>
         <Typography fontSize="32px" style={{marginTop: 15, color: 'white'}}>reviews:</Typography>
         </div>

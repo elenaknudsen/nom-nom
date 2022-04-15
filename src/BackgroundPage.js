@@ -83,12 +83,15 @@ class BackgroundPage extends React.Component {
     }
     goToHomepage(event) {
         let temp = this.state.prevPage;
+        if(this.state.page==='homepage') {
+        } else {
         temp.push(this.state.page)
         this.setState({
             page: 'homepage',
             prevPage: temp
 
         })
+    }
     }
 
     onBackButton(event) {
