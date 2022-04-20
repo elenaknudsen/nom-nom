@@ -25,9 +25,9 @@ class BottomNavbar extends React.Component {
 
 
     render () {
-        return(<Paper style={{ borderWidthTop: '30px', borderColor: this.props.colors.NAVY_BLUE, borderStyle: 'solid', boxShadow: '0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 4px 8px 0 rgba(0, 0, 0, 0.2)', backgroundColor: this.props.colors.CAROLINA_BLUE, width: '110%', textAlign: 'center'}} >
-        <Typography style={{fontSize: '32px', color: 'white'}} m={2}>
-        <IconButton onClick={this.handleHomeClick}><Icon style={{color: 'white', marginRight: 150}}><HomeIcon/></Icon></IconButton>
+        return(<Paper style={{ boxShadow: '0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 4px 8px 0 rgba(0, 0, 0, 0.2)', backgroundColor: this.props.colors.BACKGROUND, width: '110%', textAlign: 'center'}} >
+        <Typography style={{fontSize: '32px', color: 'white'}}>
+        <IconButton onClick={this.handleHomeClick} style={{marginRight: 150}}><Icon style={{color: 'white'}}><HomeIcon/></Icon></IconButton>
         <IconButton onClick={this.handleClick}><Icon style={{color: 'white'}}><SearchIcon/></Icon></IconButton>
         </Typography>
         

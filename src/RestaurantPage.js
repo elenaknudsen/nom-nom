@@ -4,15 +4,11 @@ import { Typography } from '@mui/material';
 import Icon from '@mui/material/Icon';
 import Star from '@mui/icons-material/Star';
 import StarOutline from '@mui/icons-material/StarOutline';
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
 import Chip from '@mui/material/Chip';
-import FormControl from '@mui/material/FormControl';
-import Select from '@mui/material/Select';
-import List from '@mui/material/List';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItem from '@mui/material/ListItem';
 import Button from '@mui/material/Button';
+import NorthEastIcon from '@mui/icons-material/NorthEast';
+import ComputerIcon from '@mui/icons-material/Computer';
+import AssistantDirectionIcon from '@mui/icons-material/AssistantDirection';
 
 import Review from './Review';
 
@@ -36,7 +32,7 @@ class RestaurantPage extends React.Component {
           this.props.goToReviewPage(this.props.data);
       }
       generateVibes(title) {
-          return(<Chip style={{color: 'white', backgroundColor: this.props.colors.GOLDENISH}} label={title}/>)
+          return(<Chip style={{color: 'white', margin: 5, backgroundColor: this.props.colors.GOLDENISH}} label={title}/>)
       }
       chipClick(event){
           let link = event.target.textContent;
@@ -58,7 +54,7 @@ class RestaurantPage extends React.Component {
       }
     render () {
         return(<>
-        <Paper style={{width: 300, backgroundColor: this.props.colors.CAROLINA_BLUE, margin: 25, padding: 20, overflow: 'scroll'}}>
+        <Paper style={{width: 300, backgroundColor: this.props.colors.CAROLINA_BLUE, margin: 25, marginBottom: 10, padding: 20, overflow: 'scroll'}}>
         <img alt={this.props.data.name} src={this.props.data.image} style={{width: 300, height: 200}}></img>
         <Typography fontSize="32px" style={{ marginTop: 20, fontWeight: 'bold', color: 'white' }}>{this.props.data.name}</Typography>
         <div style={{ display: 'flex', flexDirection: 'row' }}>
@@ -72,17 +68,20 @@ class RestaurantPage extends React.Component {
             <Typography fontSize="24px" style={{ marginLeft: 30, marginTop: 10, color: 'white' }}>{this.props.data.price}</Typography>
 
         </div>
-        <Typography style={{color: 'white', marginTop: 10}}fontSize="14px">{this.props.data.hours}</Typography>
+        <div style={{ display: "flex", flexDirection: "row", marginTop: 20, marginBottom: 20 }}>
+        <Button variant="contained" style={{backgroundColor: this.props.colors.ACCENT, marginRight: 25}} label="website" onClick={this.chipClick}><ComputerIcon style={{marginRight: 5}}/> website</Button>
+        <Button variant="contained" style={{backgroundColor: this.props.colors.ACCENT}} label="directions" onClick={this.chipClick}><AssistantDirectionIcon style={{marginRight: 5}}/>directions</Button>
+        </div>
+        <Typography style={{color: 'white', marginTop: 10}}fontSize="20px">hours:</Typography>
+        {this.props.data.hours.map(element => <Typography fontSize="14px" style={{ display: "grid", gridColumn: "4/5", color: 'white' }}>{element}</Typography> )}
         <Typography style={{color: 'white', marginTop: 10}}fontSize="14px">{this.props.data.sitTime} wait</Typography>
         <div style={{marginTop: 10}}>
+        <Typography style={{color: 'white', marginTop: 10}}fontSize="20px">cuisines:</Typography>
         {this.props.data.cuisine.map(element => <Typography fontSize="14px" style={{ display: "grid", gridColumn: "4/5", color: 'white' }}>{element}</Typography> )}
         </div>
         <div style={{marginTop: 10}}>
+        <Typography style={{color: 'white', marginTop: 10}}fontSize="20px">special diets:</Typography>
         {this.props.data.dietRange.map(element => <Typography fontSize="14px" style={{ display: "grid", gridColumn: "4/5", color: 'white' }}>{element}</Typography> )}
-        </div>
-        <div style={{ display: "flex", flexDirection: "row", marginTop: 10 }}>
-        <Chip onClick={this.chipClick} style={{color: 'white', backgroundColor: this.props.colors.ACCENT}} label="website"/>
-        <Chip onClick={this.chipClick} style={{color: 'white', backgroundColor: this.props.colors.ACCENT}} label="directions"/>
         </div>
         <div style={{display: 'flex', flexDirection: 'row', marginTop: 10 }}>
         <Typography style={{color: 'white'}} fontSize="32px">vibes:</Typography>

@@ -36,7 +36,7 @@ class NewReview extends React.Component {
     render () {
       console.log(this.props.data)
         return(<>
-            <Paper style={{width: 300, height: window.innerHeight, backgroundColor: this.props.colors.CAROLINA_BLUE, margin: 25, padding: 30, display: 'flex', flexDirection: 'column', overflow: 'scroll'}}>
+            <Paper style={{width: 300, height: window.innerHeight, backgroundColor: this.props.colors.CAROLINA_BLUE, margin: 25, marginBottom: 10, padding: 30, display: 'flex', flexDirection: 'column', overflow: 'scroll'}}>
             <div style={{display: 'flex', flexDirection: 'row'}}>
             <IconButton onClick={() => this.handleStar(1)}>{this.state.stars===0 ? <Icon style={{color: this.props.colors.GOLDENISH, padding:10}}><StarOutline fontSize="large"/></Icon> : <Icon style={{color: this.props.colors.GOLDENISH, padding:10}}><Star fontSize="large"/></Icon>}</IconButton>
             <IconButton onClick={() => this.handleStar(2)}>{this.state.stars<=1 ? <Icon style={{color: this.props.colors.GOLDENISH, padding:10}}><StarOutline fontSize="large"/></Icon> : <Icon style={{color: this.props.colors.GOLDENISH, padding:10}}><Star fontSize="large"/></Icon>}</IconButton>

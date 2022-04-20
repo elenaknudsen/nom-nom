@@ -20,26 +20,26 @@ class HomePage extends React.Component {
     render () {
         return(<>
         <div style={{  width: window.innerWidth, overflowY: 'scroll', overflowX: 'hidden'}}>
-        <Typography style={{ fontSize: '24px', color: 'white', textAlign: 'center', marginTop: 20}}>experience franklin street from bonchon to franklin motors!</Typography>
+        <Typography style={{ fontSize: '16px', color: 'white', textAlign: 'left', marginTop: 20, marginLeft: 40, marginRight: 35}}>Experience Franklin Street from Bonchon to Franklin Motors!</Typography>
         <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
-        <img alt="map of franklin street" src={Map}style={{width:300, marginTop: 30, marginLeft: 'auto', marginRight: 'auto'}}></img>
+        <img alt="map of franklin street" src={Map}style={{width:300, marginTop: 10, marginLeft: 'auto', marginRight: 'auto'}}></img>
         </div>
         <div style={{ textAlign: 'left', marginLeft: '5%', marginTop: '3%' }}>
             <Typography style={{marginLeft: 25, fontSize: '24px', padding: 10, color: 'white'}}>cheap eats</Typography>
-            <div style={{ display: 'flex', flexDirection: 'row', overflowX: 'scroll'}}> 
+            <div style={{ display: 'flex', flexDirection: 'row', overflowX: 'scroll', marginRight: 25}}> 
                 {this.props.data.restaurants.map(element => this.generateCards(element))}
             </div>
         </div>
         <div style={{ textAlign: 'left', marginLeft: '5%', marginTop: '3%'}}>
             <Typography style={{marginLeft: 25, fontSize: '24px', padding: 10, color: 'white'}}>iconic chapel hill spots</Typography>
-            <div style={{ display: 'flex', flexDirection: 'row', overflowX: 'scroll'}}> 
+            <div style={{ display: 'flex', flexDirection: 'row', overflowX: 'scroll', marginRight: 25}}> 
             {this.props.data.restaurants.map(element => this.generateCards(element))}
 
             </div>
         </div>
         <div style={{ textAlign: 'left', marginLeft: '5%', marginTop: '3%' }}>
             <Typography style={{marginLeft: 25, fontSize: '24px', padding: 10, color: 'white'}}>local favorites</Typography>
-            <div style={{ display: 'flex', flexDirection: 'row', overflowX: 'scroll', marginBottom: 100}}> 
+            <div style={{ display: 'flex', flexDirection: 'row', overflowX: 'scroll', marginRight: 25, marginBottom: 20}}> 
             {this.props.data.restaurants.map(element => this.generateCards(element))}
             </div>
         </div>
