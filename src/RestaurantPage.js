@@ -35,8 +35,9 @@ class RestaurantPage extends React.Component {
           return(<Chip style={{color: 'white', margin: 5, backgroundColor: this.props.colors.GOLDENISH}} label={title}/>)
       }
       chipClick(event){
-          let link = event.target.textContent;
+          let link = event.target.id;
           if(link==='website') {
+              console.log(this.props.data.web)
               window.open(this.props.data.website)
           } else {
               window.open(this.props.data.directions)
@@ -69,8 +70,8 @@ class RestaurantPage extends React.Component {
 
         </div>
         <div style={{ display: "flex", flexDirection: "row", marginTop: 20, marginBottom: 20 }}>
-        <Button variant="contained" style={{backgroundColor: this.props.colors.ACCENT, marginRight: 25}} label="website" onClick={this.chipClick}><ComputerIcon style={{marginRight: 5}}/> website</Button>
-        <Button variant="contained" style={{backgroundColor: this.props.colors.ACCENT}} label="directions" onClick={this.chipClick}><AssistantDirectionIcon style={{marginRight: 5}}/>directions</Button>
+        <Button variant="contained" style={{backgroundColor: this.props.colors.ACCENT, marginRight: 25}} id="website" onClick={this.chipClick}><ComputerIcon style={{marginRight: 5}}/> website</Button>
+        <Button variant="contained" style={{backgroundColor: this.props.colors.ACCENT}} id="directions" onClick={this.chipClick}><AssistantDirectionIcon style={{marginRight: 5}}/>directions</Button>
         </div>
         <Typography style={{color: 'white', marginTop: 10}}fontSize="20px">hours:</Typography>
         {this.props.data.hours.map(element => <Typography fontSize="14px" style={{ display: "grid", gridColumn: "4/5", color: 'white' }}>{element}</Typography> )}
