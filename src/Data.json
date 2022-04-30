@@ -1008,6 +1008,389 @@
             ],
             "reviews": {
             }
-        }
+        },
+        {
+            "name": "Ben & Jerry’s",
+            "image": "https://tb-static.uber.com/prod/image-proc/processed_images/5219e06397c0e66667ca601271be1915/c73ecc27d2a9eaa735b1ee95304ba588.jpeg",
+        	"cuisine": ["Sweets"],
+        	"hours": "Sun-Thur 1pm-11pm, Fri-Sat 1pm-12am",
+        	"price": "$$",
+        	"dietRange": [
+            	"vegetarian", "vegan", "gluten-free"
+        	],
+        	"website": "https://www.benjerry.com/chapelhill",
+        	"directions": "https://g.page/benjerrychnc?share",
+        	"rating": 5,
+        	"sitTime": "pulled from google",
+        	"foodTime": 0,
+        	"vibes": [
+        	],
+        	"reviews": {
+        	}
+    	},
+    	{
+            "name": "Trolly Stop Hot Dogs",
+            "image": "https://localwiki.org/media/cache/fb/4b/fb4bc198e9588f2310cbb1e1c3d1d25e.jpg",
+        	"cuisine": ["American"],
+        	"hours": "Mon-Sat 11am-8pm",
+        	"price": "$",
+        	"dietRange": [
+            	"None"
+        	],
+        	"website": "https://www.trollystophotdogs.com/",
+        	"directions": "https://g.page/trollystopchapelhill?share",
+        	"rating": 5,
+        	"sitTime": "pulled from google",
+        	"foodTime": 0,
+        	"vibes": [
+        	],
+        	"reviews": {
+        	}
+    	},
+    	{
+            "name": "I Love New York Pizza",
+            "image": "https://duyt4h9nfnj50.cloudfront.net/resized/1540499952228-w2880-a3.jpg",
+        	"cuisine": ["American", "Pizza", "Italian"],
+        	"hours": "Mon 12pm-5pm, Tues-Wed 12pm-12am, Thurs-Sat 12pm-2am",
+        	"price": "$$",
+        	"dietRange": [
+            	"Vegetarian", "Vegan"
+        	],
+        	"website": "https://www.orderilovenewyorkpizza.com/",
+        	"directions": "https://goo.gl/maps/SuzQsarhqTHSx7aH9",
+        	"rating": 5,
+        	"sitTime": "pulled from google",
+        	"foodTime": 0,
+        	"vibes": [
+        	],
+        	"reviews": {
+        	}
+    	},
+    	{
+            "name": "Yogurt Pump",
+            "image": "http://yogurtpump.com/uploads/8/9/7/4/89748231/54_orig.jpg",
+        	"cuisine": ["Sweets"],
+        	"hours": "Sun-Wed 12pm-9pm, Thurs-Fri 12pm-10pm",
+        	"price": "$",
+        	"dietRange": [
+            	"Vegetarian", "Vegan", "Gluten-Free"
+        	],
+        	"website": "http://www.yogurtpump.com/index.html",
+        	"directions": "https://g.page/TheYogurtPump?share",
+        	"rating": 5,
+        	"sitTime": "pulled from google",
+        	"foodTime": 0,
+        	"vibes": [
+        	],
+        	"reviews": {
+        	}
+    	},
+    	{
+            "name": "Blue’s on Franklin",
+            "image": "https://assets.dam.simpleviewinc.com/asset/61816482e6e035006b34ca06",
+        	"cuisine": ["American", "Bar", "Barbecue"],
+        	"hours": "Tues-Wed 11:30am-3pm 5pm-9pm, Thurs-Sat 11:30am-10pm",
+        	"price": "$$",
+        	"dietRange": [
+            	"Vegetarian",
+            	"Vegan"
+        	],
+        	"website": "https://bluesonfranklin.com/",
+        	"directions": "https://goo.gl/maps/8wN9wEnGZpp5En5w9",
+        	"rating": 5,
+        	"sitTime": "pulled from google",
+        	"foodTime": 0,
+        	"vibes": [
+        	],
+        	"reviews": {
+        	}
+    	},
+    	{
+            "name": "Spicy 9 Sushi Bar & Asian",
+            "image": "https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=600,height=400,format=auto,quality=50/https://doordash-static.s3.amazonaws.com/media/store/header/f16511d6-4da1-497e-846d-3d4a3ce94b92.jpg",
+        	"cuisine": ["Sushi", "Bar", "Asian"],
+        	"hours": "Sun 12pm-10pm, Mon-Sat 11am-10pm",
+        	"price": "$$",
+        	"dietRange": [
+            	"Vegetarian",
+            	"Vegan", "Gluten-Free"
+        	],
+        	"website": "https://www.spicy9chapelhill.com/",
+        	"directions": "https://goo.gl/maps/nJo52kK938eJbbaX8",
+        	"rating": 5,
+        	"sitTime": "pulled from google",
+        	"foodTime": 0,
+        	"vibes": [
+        	],
+        	"reviews": {
+        	}
+    	},
+    	{
+            "name": "Le Macaron French Pastries",
+            "image": "https://chapelboromedia.s3.amazonaws.com/uploads/2021/07/31111910/Picture5.png",
+        	"cuisine": ["Sweets", "French"],
+        	"hours": "Mon-Sat 9am-8pm, Sun 9am-7pm",
+        	"price": "$$",
+        	"dietRange": [
+            	"Vegetarian", 
+	"Gluten-Free"
+        	],
+        	"website": "https://lemacaron-us.com//",
+        	"directions": "https://goo.gl/maps/RVe4nqM5mZQUwvkXA",
+        	"rating": 5,
+        	"sitTime": "pulled from google",
+        	"foodTime": 0,
+        	"vibes": [
+        	],
+        	"reviews": {
+        	}
+    	},
+    	{
+            "name": "Que Chula Craft Tacos & Tequila Bar",
+            "image": "https://images.otstatic.com/prod1/42044447/1/large.jpg",
+        	"cuisine": ["Mexican", "Bar"],
+        	"hours": "Mon-Thurs 11am-10pm, Fri-Sat 11am-11pm, Sun 11am-9pm",
+        	"price": "$$",
+        	"dietRange": [
+            	"None"
+        	],
+        	"website": "https://quechulatacos.com/",
+        	"directions": "https://g.page/quechula?share",
+        	"rating": 5,
+        	"sitTime": "pulled from google",
+        	"foodTime": 0,
+        	"vibes": [
+        	],
+        	"reviews": {
+        	}
+    	},
+    	{
+            "name": "La Residence",
+            "image": "https://assets.dam.simpleviewinc.com/asset/618163fae6e035006b34c8cf",
+        	"cuisine": ["French", "Seafood"],
+        	"hours": "Thurs 5pm-11pm, Fri 12pm-11pm, Sat-Sun 1am-11pm",
+        	"price": "$$",
+        	"dietRange": [
+            	"None"
+        	],
+        	"website": "http://www.laresidencedining.com/",
+        	"directions": "https://goo.gl/maps/Cdsuf2FnPMWi8cBP6",
+        	"rating": 5,
+        	"sitTime": "pulled from google",
+        	"foodTime": 0,
+        	"vibes": [
+        	],
+        	"reviews": {
+        	}
+    	},
+    	{
+            "name": "Pantana Bob’s",
+            "image": "https://media-cdn.tripadvisor.com/media/photo-s/11/df/e5/66/pantana-bob-s.jpg",
+        	"cuisine": ["American", "Bar"],
+        	"hours": "Mon-Fri 3pm-2am, Sat-Sun 12pm-2am",
+        	"price": "$$",
+        	"dietRange": [
+            	"None"
+        	],
+        	"website": "https://www.facebook.com/PantanaBobsCH/",
+        	"directions": "https://goo.gl/maps/hUgzzCnpmtAjCa7y7",
+        	"rating": 5,
+        	"sitTime": "pulled from google",
+        	"foodTime": 0,
+        	"vibes": [
+        	],
+        	"reviews": {
+        	}
+    	},
+    	{
+            "name": "Might As Well",
+            "image": "https://assets.simpleviewinc.com/simpleview/image/fetch/c_limit,h_1200,q_75,w_1200/https://assets.dam.simpleviewinc.com/asset/6181636be6e035006b34c7ae",
+        	"cuisine": ["American", "Bar"],
+        	"hours": "Mon-Thur 4pm-2am, Fri-Sun 12pm-2am",
+        	"price": "$$",
+        	"dietRange": [
+            	"None"
+        	],
+        	"website": "https://chapelhill.mightaswellbarandgrill.com",
+        	"directions": "https://goo.gl/maps/BTA9Jd6wK4GZgfNS8",
+        	"rating": 5,
+        	"sitTime": "pulled from google",
+        	"foodTime": 0,
+        	"vibes": [
+        	],
+        	"reviews": {
+        	}
+    	},
+    	{
+            "name": "Panera Bread",
+            "image": "https://media-cdn.tripadvisor.com/media/photo-s/0d/4e/1a/e7/photo0jpg.jpg",
+        	"cuisine": ["American", "Deli"],
+        	"hours": "Mon-Sat 6am-9pm, Sun 7am-9pm",
+        	"price": "$$",
+        	"dietRange": [
+            	"None"
+        	],
+        	"website": "https://locations.panerabread.com/nc/chapel-hill/213-w-franklin-st.html",
+        	"directions": "https://goo.gl/maps/Me9gV796yQcnCdHw6",
+        	"rating": 5,
+        	"sitTime": "pulled from google",
+        	"foodTime": 0,
+        	"vibes": [
+        	],
+        	"reviews": {
+        	}
+    	},
+    	{
+            "name": "Chimney Indian Kitchen + Bar",
+            "image": "https://d1ralsognjng37.cloudfront.net/ed2e8613-f75c-4d77-aa6a-f0e00ff0e069.jpeg",
+        	"cuisine": ["Indian", "Bar"],
+        	"hours": "Mon-Fri 11am-2:30pm 5pm-9pm, Sat-Sun 12pm-9pm",
+        	"price": "$$",
+        	"dietRange": [
+            	"Vegetarian", "Vegan", "Gluten-Free"
+        	],
+        	"website": "https://www.chimneyindiankitchen.com/",
+        	"directions": "https://goo.gl/maps/FiZMBraia1KiChu7A",
+        	"rating": 5,
+        	"sitTime": "pulled from google",
+        	"foodTime": 0,
+        	"vibes": [
+        	],
+        	"reviews": {
+        	}
+    	},
+    	{
+            "name": "Vegan Flava Cafe",
+            "image": "https://images.happycow.net/venues/1024/38/62/hcmp38620_200306.jpeg",
+        	"cuisine": ["Indian", "American", "Smoothies"],
+        	"hours": "Fri 5pm-7pm, Sat 1pm-7pm, Sun 12pm-4pm",
+        	"price": "$$",
+        	"dietRange": [
+            	"Vegetarian", "Vegan", "Gluten-Free"
+        	],
+        	"website": "http://www.veganflavacafe.com/",
+        	"directions": "https://goo.gl/maps/9SrYyxvhpkpbBiDm9",
+        	"rating": 5,
+        	"sitTime": "pulled from google",
+        	"foodTime": 0,
+        	"vibes": [
+        	],
+        	"reviews": {
+        	}
+    	},
+    	{
+            "name": "Chipotle Mexican Grill",
+            "image": "https://b.zmtcdn.com/data/pictures/5/17053295/dd98968df32e16893a481cceeb40cbf6.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*",
+        	"cuisine": ["Mexican"],
+        	"hours": "Mon-Sun 10:45am-10pm",
+        	"price": "$$",
+        	"dietRange": [
+            	"Vegetarian", "Vegan", "Gluten-Free"
+        	],
+        	"website": "https://locations.chipotle.com/nc/chapel-hill/301-w-franklin-st",
+        	"directions": "https://goo.gl/maps/7NKFFsKHbYPPM9eB8",
+        	"rating": 5,
+        	"sitTime": "pulled from google",
+        	"foodTime": 0,
+        	"vibes": [
+        	],
+        	"reviews": {
+        	}
+    	},
+    	{
+            "name": "The Purple Bowl",
+            "image": "https://res.cloudinary.com/rppcloud/image/fetch/s--CYW9vTSQ--/c_fill,e_viesus_correct,g_auto,h_600,w_900/https://s3-media3.fl.yelpcdn.com/bphoto/OD0dfOI-I4c_7mxzsG6WlQ/o.jpg",
+        	"cuisine": ["Smoothies", "Cafe"],
+        	"hours": "Mon-Sun 8am-7pm",
+        	"price": "$$",
+        	"dietRange": [
+            	"None"
+        	],
+        	"website": "https://www.purplebowlch.com/",
+        	"directions": "https://goo.gl/maps/ffNFPAdnvcq9J6PS7",
+        	"rating": 5,
+        	"sitTime": "pulled from google",
+        	"foodTime": 0,
+        	"vibes": [
+        	],
+        	"reviews": {
+        	}
+    	},
+    	{
+            "name": "Cholonad",
+            "image": "https://ot-foodspotting-production.s3.amazonaws.com/reviews/2456750/thumb_600.jpg",
+        	"cuisine": ["Indian", "Bar"],
+        	"hours": "Mon-Thurs 11:30am-2:30pm 5pm-10pm, Fri-Sat 11:30am-11pm, Sun 11:30am-9:30pm",
+        	"price": "$$",
+        	"dietRange": [
+            	"Vegetarian", "Vegan", "Gluten-Free"
+        	],
+        	"website": "https://cholanad.com/",
+        	"directions": "https://g.page/CholaNad?share",
+        	"rating": 5,
+        	"sitTime": "pulled from google",
+        	"foodTime": 0,
+        	"vibes": [
+        	],
+        	"reviews": {
+        	}
+    	},
+    	{
+            "name": "Cha House",
+            "image": "https://assets.dam.simpleviewinc.com/asset/618163fae6e035006b34c8ad",
+        	"cuisine": ["Cafe", "Boba", "Chinese"],
+        	"hours": "Sun-Thurs 11am-9pm, Fri-Sat 11am-9:30pm",
+        	"price": "$$",
+        	"dietRange": [
+            	"Vegetarian", "Vegan", "Gluten-Free"
+        	],
+        	"website": "https://www.chahouseusa.com/",
+        	"directions": "https://goo.gl/maps/Nf581GFLnDctAehu6",
+        	"rating": 5,
+        	"sitTime": "pulled from google",
+        	"foodTime": 0,
+        	"vibes": [
+        	],
+        	"reviews": {
+        	}
+    	},
+    	{
+            "name": "The Crunkleton",
+            "image": "https://thecrunkleton.com/wp-content/uploads/2018/08/s22-2.jpg",
+        	"cuisine": ["Bar", "Wine Bar"],
+        	"hours": "Mon-Sun 4pm-2am",
+        	"price": "$$",
+        	"dietRange": [
+	"None"
+        	],
+        	"website": "https://thecrunkleton.com/",
+        	"directions": "https://goo.gl/maps/CuQM1rWccY8Rb2W99",
+        	"rating": 5,
+        	"sitTime": "pulled from google",
+        	"foodTime": 0,
+        	"vibes": [
+        	],
+        	"reviews": {
+        	}
+    	},
+    	{
+            "name": "Perennial",
+            "image": "https://images.squarespace-cdn.com/content/v1/59259dc5e3df2802dd10eced/1625405104648-0XXBX1KAD6QAKOLNJ736/image-asset.jpeg",
+        	"cuisine": ["Cafe", "Coffee", "Sweets"],
+        	"hours": "Mon-Fri 8am-2pm, Sat-Sun 9am-3pm",
+        	"price": "$$",
+        	"dietRange": [
+            	"Vegetarian", "Vegan", "Gluten-Free"
+        	],
+        	"website": "https://www.perennial.cafe/",
+        	"directions": "https://goo.gl/maps/zbsRdabfdk21swiq6",
+        	"rating": 5,
+        	"sitTime": "pulled from google",
+        	"foodTime": 0,
+        	"vibes": [
+        	],
+        	"reviews": {
+        	}
+    	}
     ]
 }
