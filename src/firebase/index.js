@@ -1,16 +1,15 @@
 // Adding backend functionality
 // Import the functions you need from the SDKs you need
-import * as firebase from "firebase/app";
-import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
-import getDatabase from "firebase/database";
+
+import firebase from 'firebase/compat/app'
+import 'firebase/compat/firestore'
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-let firebaseConfig = {
+firebase.initializeApp({
     apiKey: "AIzaSyDeiURWl2CJdCCmM8Aox6htxpe23aTfHoE",
     authDomain: "nom-nom-fd636.firebaseapp.com",
     // Adding database
@@ -20,13 +19,11 @@ let firebaseConfig = {
     messagingSenderId: "262953897556",
     appId: "1:262953897556:web:03b7212769dd2a068fa7c1",
     measurementId: "G-HPBXJK9DQF"
-};
+})
 
-console.log(firebaseConfig);
-// Initialize Firebase
-
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
+let db = firebase.firestore();
 
 
-export default firebaseConfig;
+export default {
+    firebase, db
+}

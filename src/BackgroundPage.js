@@ -8,7 +8,6 @@ import RestaurantPage from './RestaurantPage';
 import NewReview from './NewReview';
 import BottomNavbar from './BottomNavbar';
 
-const testData = require('./TestData.json');
 
 const data = require('./Data.json')
 

@@ -9,8 +9,8 @@ import Button from '@mui/material/Button';
 import NorthEastIcon from '@mui/icons-material/NorthEast';
 import ComputerIcon from '@mui/icons-material/Computer';
 import AssistantDirectionIcon from '@mui/icons-material/AssistantDirection';
-
-import Review from "./Review";
+import getReviews from './firebase';
+import { getReview, writeReview } from './Review'
 
 class RestaurantPage extends React.Component {
     constructor(props) {
@@ -44,9 +44,10 @@ class RestaurantPage extends React.Component {
         }
     }
     generateReviews(element) {
-        let content = this.props.data.reviews[element].comment;
-        let stars = this.props.data.reviews[element].stars;
-        return (<Review title={element} content={content} colors={this.props.colors} stars={stars}></Review>)
+        let data = getReviews();
+        let content = data.content;
+        let stars = data.stars;
+        return (<ul title={element} content={content} colors={this.props.colors} stars={stars}></ul>)
     }
     handleChange(event) {
         this.setState({
@@ -95,13 +96,14 @@ class RestaurantPage extends React.Component {
                     <Typography fontSize="32px" style={{ marginTop: 15, color: 'white' }}>reviews:</Typography>
                 </div>
                 <div style={{ display: 'flex', flexDirection: 'column', overflow: 'scroll', gap: 10 }}>
-                    {this.state.key.length == 0 ? <Typography fontSize="16px" style={{ marginTop: 15, marginLeft: 5, color: 'white' }}>no reviews yet</Typography> : <></>}
+                    {this.state.key.length === 0 ? <Typography fontSize="16px" style={{ marginTop: 15, marginLeft: 5, color: 'white' }}>no reviews yet</Typography> : <></>}
                     {this.state.key.map(element => this.generateReviews(element))}
                 </div>
 
                 <StarOutline fontSize="small" />
-            </Icon>
-        </ListItemButton>
+            </Paper>
+        </>
+
             //                 </List >
             //             </div >
             //             <div
