@@ -1,7 +1,10 @@
 import React from 'react';
 import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
+import Typography from '@mui/material/Typography';
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
 
 import Result from './Result.js';
 
@@ -9,41 +12,51 @@ class SearchResults extends React.Component {
     constructor(props) {
         super(props);
       this.state = {
-
+        selectValue: 10
       };
-      this.handleClick = this.handleClick.bind(this)
+      this.handleClick = this.handleClick.bind(this);
+      this.getRestaurants = this.getRestaurants.bind(this);
+      this.handleChange = this.handleChange.bind(this)
       }
 
       handleClick(event) {
-          this.props.goToRestaurantPage();
-          console.log("ASJDHAJHA")
+          this.props.data.restaurants.forEach( element => {
+              if (element.name===event) {
+                this.props.goToRestaurantPage(element);
+
+              }
+          })
+      }
+      handleChange(event) {
+          this.setState({
+              selectValue: event.target.value
+          })
+      }
+      getRestaurants(element) {
+          return(<ListItemButton style={{padding: 0 }}onClick={()=>this.handleClick(element.name)}>
+            <Result data={element} colors={this.props.colors} />
+        </ListItemButton>)
       }
     render () {
-        return(<>
-            <List style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', overflow: 'scroll', paddingTop: 200, margin: 20, padding: 1025, pointerEvents: 'fill'}}>
-                <ListItemButton onClick={this.handleClick} style={{padding: 0}}>
-                <Result colors={this.props.colors}>asdfa</Result>
-                </ListItemButton>
-                <ListItemButton onClick={this.handleClick} style={{padding: 0}}>
-                <Result colors={this.props.colors}>asdfa</Result>
-                </ListItemButton>
-                <ListItemButton onClick={this.handleClick} style={{padding: 0}}>
-                <Result colors={this.props.colors}>asdfa</Result>
-                </ListItemButton>
-                <ListItemButton onClick={this.handleClick} style={{padding: 0}}>
-                <Result colors={this.props.colors}>asdfa</Result>
-                </ListItemButton>
-                <ListItemButton onClick={this.handleClick} style={{padding: 0}}>
-                <Result colors={this.props.colors}>asdfa</Result>
-                </ListItemButton>
-                <ListItemButton onClick={this.handleClick} style={{padding: 0}}>
-                <Result colors={this.props.colors}>asdfa</Result>
-                </ListItemButton>
-                <ListItemButton onClick={this.handleClick} style={{padding: 0}}>
-                <Result colors={this.props.colors}>asdfa</Result>
-                </ListItemButton>
-            </List>
-        </>)
+        return(<div style={{ width: window.innerWidth, overflowY: 'scroll', overflowX: 'hidden',display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
+        <div style={{ display: "grid", marginTop: 20, marginLeft:10, marginBottom: 10, width: 300}}>
+                <Typography style={{color: 'white', fontSize: '20px', display: "grid", gridColumn: "1/4", marginTop: 15 }}>{this.props.data.restaurants.length} results found</Typography>
+                <FormControl style={{width: '80%', display: "grid", gridColumn: "5/6", width: 150 }}>
+                    <Select 
+                    value={this.state.selectValue}
+                    onChange={this.handleChange}
+                    style={{backgroundColor: 'white', color: 'black', marginLeft: 10}}>
+                    <MenuItem value={10}>top rated</MenuItem>
+                    <MenuItem value={20}>$-$$$</MenuItem>
+                    <MenuItem value={30}>$$$-$</MenuItem>
+                    <MenuItem value={40}>A-Z</MenuItem>
+                    </Select>
+                </FormControl>
+                </div>
+                    <List style={{width: 350, display: 'flex', flexDirection: 'column', height: '100%',  overflow: 'auto', willChange: 'transform'}}>
+                        {this.props.data.restaurants.map(element => this.getRestaurants(element))}
+                    </List>
+        </div>)
     }
 }
 

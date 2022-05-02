@@ -1,159 +1,55 @@
 import React from 'react';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import Chip from '@mui/material/Chip';
 import ListItemText from '@mui/material/ListItemText';
-import Collapse from '@mui/material/Collapse';
-import ExpandLess from '@mui/icons-material/ExpandLess';
-import ExpandMore from '@mui/icons-material/ExpandMore';
-import Checkbox from '@mui/material/Checkbox';
 import Button from '@mui/material/Button';
+
+import CollapseElement from './CollapseElement';
 
 class SearchFilters extends React.Component {
     constructor(props) {
         super(props);
       this.state = {
-        open: true,
+          clearFilters: null,
       };
       this.handleClick = this.handleClick.bind(this);
+      this.handleSearch = this.handleSearch.bind(this);
       }
     
     
-        handleClick() {
-          console.info('You clicked the Chip.');
-        }
+    handleClick(event) {
+        this.setState({
+            clearFilters: true
+        })
+    }
+
+    handleSearch(event) {
+       this.props.goToSearchResults();
+    }
 
     render () {
-        return(<>
-        <List style={{backgroundColor: this.props.colors.CAROLINA_BLUE, color: 'white', overflow: 'scroll'}}>
-            <ListItem>
-                <ListItemText>filters</ListItemText>
+        return(<div style={{width: window.innerWidth, height: window.innerHeight, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', overflowY: 'scroll'}}>
+        <List style={{backgroundColor: this.props.colors.CAROLINA_BLUE, color: 'white', overflow: 'scroll', margin: 20, paddingTop: 0, width: 300 }}>
+            <ListItem style={{backgroundColor: this.props.colors.ACCENT, padding: 20}}>
+                <ListItemText  primaryTypographyProps={{fontSize: '24px'}} >filters</ListItemText>
             </ListItem>
-
-            <ListItemButton >
-                <ListItemText>price</ListItemText>
-                {this.state.open ? <ExpandLess /> : <ExpandMore />}
-            </ListItemButton>
-            <Collapse in={this.state.open} >
-                <List>
-                <ListItem sx={{ pl: 4 }}>
-                    <Checkbox></Checkbox>
-                    <ListItemText>cheap eats</ListItemText>
-                </ListItem>
-                <ListItem sx={{ pl: 4 }}>
-                    <Checkbox></Checkbox>
-                    <ListItemText>mid-range</ListItemText>
-                </ListItem>
-                <ListItem sx={{ pl: 4 }}>
-                    <Checkbox></Checkbox>
-                    <ListItemText>splurge day</ListItemText>
-                </ListItem>
-                </List>
-            </Collapse>
-
-            <ListItemButton>
-                <ListItemText>cuisine</ListItemText>
-                {this.state.open ? <ExpandLess /> : <ExpandMore />}
-            </ListItemButton>
-            <Collapse in={this.state.open} >
-                <List>
-                <ListItem sx={{ pl: 4 }}>
-                    <Checkbox></Checkbox>
-                    <ListItemText>american</ListItemText>
-                </ListItem>
-                <ListItem sx={{ pl: 4 }}>
-                    <Checkbox></Checkbox>
-                    <ListItemText>japanese</ListItemText>
-                </ListItem>
-                <ListItem sx={{ pl: 4 }}>
-                    <Checkbox></Checkbox>
-                    <ListItemText>italian</ListItemText>
-                </ListItem>
-                </List>
-            </Collapse>
-
-            <ListItemButton>
-                <ListItemText>dietary restrictions</ListItemText>
-            {this.state.open ? <ExpandLess /> : <ExpandMore />}
-            </ListItemButton>
-            <Collapse in={this.state.open} >
-                <List>
-                <ListItem sx={{ pl: 4 }}>
-                    <Checkbox></Checkbox>
-                    <ListItemText>vegetarian</ListItemText>
-                </ListItem>
-                <ListItem sx={{ pl: 4 }}>
-                    <Checkbox></Checkbox>
-                    <ListItemText>gluten-free</ListItemText>
-                </ListItem>
-                <ListItem sx={{ pl: 4 }}>
-                    <Checkbox></Checkbox>
-                    <ListItemText>vegan</ListItemText>
-                </ListItem>
-                </List>
-            </Collapse>
-
-            <ListItemButton>
-                <ListItemText>proximity</ListItemText>
-                {this.state.open ? <ExpandLess /> : <ExpandMore />}
-            </ListItemButton>
-            <Collapse in={this.state.open} >
-                <List>
-                <ListItem sx={{ pl: 4 }}>
-                    <Checkbox></Checkbox>
-                    <ListItemText>less than 1 mile</ListItemText>
-                </ListItem>
-                <ListItem sx={{ pl: 4 }}>
-                    <Checkbox></Checkbox>
-                    <ListItemText>1-5 miles</ListItemText>
-                </ListItem>
-                <ListItem sx={{ pl: 4 }}>
-                    <Checkbox></Checkbox>
-                    <ListItemText>more than 5 miles</ListItemText>
-                </ListItem>
-                </List>
-            </Collapse>
-
-            <ListItemButton>
-                <ListItemText>predicted wait times</ListItemText>
-                {this.state.open ? <ExpandLess /> : <ExpandMore />}
-            </ListItemButton>
-            <Collapse in={this.state.open} >
-                <List>
-                <ListItem sx={{ pl: 4 }}>
-                    <Checkbox></Checkbox>
-                    <ListItemText>less than 10 minutes</ListItemText>
-                </ListItem>
-                <ListItem sx={{ pl: 4 }}>
-                    <Checkbox></Checkbox>
-                    <ListItemText>10-30 minutes</ListItemText>
-                </ListItem>
-                <ListItem sx={{ pl: 4 }}>
-                    <Checkbox></Checkbox>
-                    <ListItemText>more than 30 minutes</ListItemText>
-                </ListItem>
-                </List>
-            </Collapse>
-
-            <ListItemButton>
-                <ListItemText>vibes</ListItemText>
-                {this.state.open ? <ExpandLess /> : <ExpandMore />}
-            </ListItemButton>
-            <Collapse in={this.state.open} >
-                <List>
-                <ListItem sx={{ pl: 4 }}>
-                    <Chip onClick={this.handleClick} variant="outlined" style={{color: this.props.colors.GREENISH}} label="asdf"/>
-                    <Chip onClick={this.handleClick} variant="outlined" style={{color: this.props.colors.GREENISH}} label="asdasdfasdfaf"/>
-                </ListItem>
-                </List>
-            </Collapse>
-
-            <ListItem>
-                <Button variant="contained" style={{backgroundColor: this.props.colors.GREENISH}}>clear all filters</Button>
+            <CollapseElement title={'price'} options={['cheap eats ($)', 'mid-range ($$)', 'high-end ($$$)']}/>
+            <CollapseElement title={'cuisine'} options={["African", "American", "Asian", "Bar", "Barbecue", "Boba", "Cafe", 
+                                                            "Cantonese", "Chinese", "Contemporary", "Coffee", "Deli", "Diner",
+                                                            "Fast Food", "French", "Fusion", "Greek", "Grill", "Healthy", "Himalayan",
+                                                            "Indian", "International", "Italian", "Japanese", "Korean", "Latin",
+                                                            "Mediterranean", "Mexican", "Middle Eastern", "Pizza", "Pub", "Seafood",
+                                                            "Smoothie", "Spanish", "Sushi", "Sweets", "Thai", "Vietnamese", "Wine Bar"]}/>
+            <CollapseElement title={'dietary restrictions'} options={['vegetarian', 'vegan', 'gluten-free']}/>
+            <CollapseElement title={'proximity'} options={['within .5 miles', 'within 1 mile', 'within 5 miles']}/>
+            <CollapseElement title={'predicted wait times'} options={['fewer than 5 minutes', 'fewer than 10 minutes', 'fewer than 30 minutes']}/>
+            <CollapseElement colors={this.props.colors} title={'vibes'} options={['#study-vibes', '#quirky', '#loud', '#quiet', '#date-night', '#bar', '#parent-approved', '#bargain', '#fancy', '#dive', '#game-night']}/>
+            <ListItem style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', padding: 10}}>
+                <Button variant="contained" onClick={this.handleClick} style={{backgroundColor: this.props.colors.ACCENT}}>clear all filters</Button>
+                <Button variant="contained" onClick={this.handleSearch} style={{backgroundColor: this.props.colors.ACCENT}}>search</Button>
             </ListItem>
         </List>
-        </>)
+        </div>)
     }
 }
 

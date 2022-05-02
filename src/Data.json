@@ -1,0 +1,1396 @@
+{
+    "restaurants": [
+        {
+            "name": "Bonchon",
+            "image": "https://d1ralsognjng37.cloudfront.net/18d6c717-1475-4f3f-b63c-ffb5df8b3bb9.jpeg",
+            "cuisine": ["Korean", "Asian" ],
+            "hours": ["Mon-Thu 11:00am-9:30pm", "Fri-Sat 11:00am-10:00pm", "Sun 12:00pm-9:00pm"],
+            "price": "$$",
+            "dietRange": [
+                "vegetarian"
+            ],
+            "website": "https://www.bonchon.com/",
+            "directions": "https://goo.gl/maps/vNRjDUQVbaM4fCMg8",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Linda's",
+            "image": "https://snworksceo.imgix.net/dth/450b600a-4179-4382-84fd-0cf59aa77bf3.sized-1000x1000.jpg?w=800&h=600",
+            "cuisine": ["American", "Bar"],
+            "hours": ["Tue-Sat 11:00am-12:00am", "Sun 11:00am-5:00pm"],
+            "price": "$",
+            "dietRange": [
+                "vegetarian"
+            ],
+            "website": "https://www.lindas-bar.com/",
+            "directions": "https://goo.gl/maps/X5Y2HarQsZcQvPkp6",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+                "Bar",
+                "Parent Approved"
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "TRU",
+            "image": "https://media-cdn.tripadvisor.com/media/photo-s/03/02/5c/db/tru-deli.jpg",
+            "cuisine": ["American", "Deli", "Wine Bar"],
+            "hours": ["Kitchen: Mon-Sun 11am-9pm", "Bar: Sun-Thur 11am-11pm", "Fri-Sat 11am-12pm"],
+            "price": "$$",
+            "dietRange": [
+                "vegetarian"
+            ],
+            "website": "https://www.trudeli.com/",
+            "directions": "https://goo.gl/maps/R1Q2vVqdS6Kjv6of9",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+                "Bar",
+                "Parent Approved"
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Imbibe",
+            "image": "https://images.squarespace-cdn.com/content/v1/5d31dfb2f543d400017d3949/1563718768006-53G4B9XNHA9SU2O2G2PZ/imbibe%2Bbooths.jpg?format=1000w",
+            "cuisine": ["Wine Bar"],
+            "hours": ["Mon-Sat 5pm-10pm"],
+            "price": "$$",
+            "dietRange": [
+                "None"
+            ],
+            "website": "https://www.facebook.com/bosshillbeerandwine/",
+            "directions": "https://goo.gl/maps/dSPfhKPevM1qRzv5A",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Time-Out Restaurant",
+            "image": "https://spoonuniversity.com/wp-content/uploads/sites/51/2014/11/IMG_70921-1024x682.jpg",
+            "cuisine": ["American", "Bar"],
+            "hours": ["24/7"],
+            "price": "$$",
+            "dietRange": [
+                "None"
+            ],
+            "website": "http://timeout247.com/",
+            "directions": "https://goo.gl/maps/7DXpSDsqs7FvERye6",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Four Corners",
+            "image": "https://assets.simpleviewinc.com/simpleview/image/fetch/c_fill,h_411,q_75,w_620/https://assets.dam.simpleviewinc.com/asset/6181636ce6e035006b34c7dd",
+            "cuisine": ["American", "Bar"],
+            "hours": ["Sun-Thur 10am-12am", "Fri-Sat 11am-2am"],
+            "price": "$$",
+            "dietRange": [
+                "None"
+            ],
+            "website": "https://fourcornersgrille.com/",
+            "directions": "https://goo.gl/maps/LdJtKhfqqdFTXQhP6",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "GRK Yeero",
+            "image": "https://img.cdn4dd.com/p/fit=cover,width=1200,height=1200,format=jpeg,quality=50/media/photos/71c3df06-002d-4885-ab48-5b58aa55897d-retina-large-jpeg",
+            "cuisine": ["Greek", "Mediterranean"],
+            "hours": ["Mon-Sat 11am-3am", "Sun 11am-9pm"],
+            "price": "$$",
+            "dietRange": [
+                "Vegetarian",
+                "Vegan"
+            ],
+            "website": "http://www.grkyeero.com/",
+            "directions": "https://g.page/grkyeero?share",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Pirate Captain",
+            "image": "https://www.piratecaptainch.com/wp-content/uploads/piratecaptainch.com/2022/04/a02.jpg",
+            "cuisine": ["Japanese", "Seafood", "Smoothie"],
+            "hours": ["Sun-Thurs 11am-10pm", "Fri-Sat 11am-10:30pm"],
+            "price": "$$",
+            "dietRange": [
+                "Vegetarian",
+                "Vegan"
+            ],
+            "website": "https://www.piratecaptainch.com/",
+            "directions": "https://goo.gl/maps/nsDQASDPYqFsnm6g6",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Sutton's Drug Store",
+            "image": "https://indyweek.com/downloads/19304/download/suttons_photo4.jpe?cb=f4c957f9e7b68350f76f7ccc0e4b2b20&w=1800",
+            "cuisine": ["American", "Diner"],
+            "hours": ["Mon-Sat 7am-2:30pm", "Sun 9am-2:30pm"],
+            "price": "$",
+            "dietRange": [
+                "None"
+            ],
+            "website": "http://suttonsdrugstore.com/",
+            "directions": "https://goo.gl/maps/x8FFDM2HCZ8dTmaQ8",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Hibachi and Company",
+            "image": "https://s3-media0.fl.yelpcdn.com/bphoto/cieGi3s0O1AeMC-Nuoc_rA/348s.jpg",
+            "cuisine": ["Japanese", "Asian"],
+            "hours": ["Mon-Sun 11am-9pm"],
+            "price": "$",
+            "dietRange": [
+                "None"
+            ],
+            "website": "http://hibachicompany.com/",
+            "directions": "https://goo.gl/maps/NJpe37cSqS6DLsr66",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Yaya Tea",
+            "image": "https://assets.simpleviewinc.com/simpleview/image/fetch/c_fill,h_411,q_75,w_620/https://assets.dam.simpleviewinc.com/asset/618163fae6e035006b34c8b8",
+            "cuisine": ["Japanese", "Boba"],
+            "hours": ["Mon-Sun 11am-8pm"],
+            "price": "$",
+            "dietRange": [
+                "None"
+            ],
+            "website": "http://yayatea.com/",
+            "directions": "https://g.page/YayaTeaChapelHill?share",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Moge Tea",
+            "image": "https://assets.dam.simpleviewinc.com/asset/61816482e6e035006b34ca10",
+            "cuisine": ["Boba"],
+            "hours": ["Sun-Thurs 10:30am-9pm", "Fri-Sat 10:30am-9:30pm"],
+            "price": "$",
+            "dietRange": [
+                "None"
+            ],
+            "website": "https://www.mogeteechapelhill.com/",
+            "directions": "https://g.page/moge-tee-chapel-hill?share",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Goodfellows",
+            "image": "https://s3-media0.fl.yelpcdn.com/bphoto/-G7Me94B4ebmaWY0BYYd0A/l.jpg",
+            "cuisine": ["Bar", "American"],
+            "hours": ["Tues-Sun 7pm-2am", "Mon 8pm-2am"],
+            "price": "$$",
+            "dietRange": [
+                "None"
+            ],
+            "website": "https://goodfellowschapelhill.com/",
+            "directions": "https://goo.gl/maps/2SgBoFRSWGxm2jRs8",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Dame's Chicken and Waffles",
+            "image": "https://i.pinimg.com/736x/b8/76/29/b87629fe1ffc7e74f75a2bd042f86df1--breakfast-for-dinner-dinner-options.jpg",
+            "cuisine": ["American", "Diner"],
+            "hours": ["Tues-Sat 11am-8pm", "Sun 10am-2pm"],
+            "price": "$$",
+            "dietRange": [
+                "None"
+            ],
+            "website": "https://dameschickenwaffles.com/",
+            "directions": "https://goo.gl/maps/AHgTsrci1QBHmRg96",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Shanghai Dumpling",
+            "image": "https://assets.simpleviewinc.com/simpleview/image/fetch/c_fill,h_396,q_75,w_704/https://assets.dam.simpleviewinc.com/asset/618162ebe6e035006b34c6e4",
+            "cuisine": ["Chinese", "Asian"],
+            "hours": ["Mon-Sun 11am-9pm"],
+            "price": "$$",
+            "dietRange": [
+                "None"
+            ],
+            "website": "https://shanghaidumplingch.com/",
+            "directions": "https://goo.gl/maps/3gVz5DVPbgVciFi1A",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Insomnia Cookies",
+            "image": "https://assets.simpleviewinc.com/simpleview/image/fetch/c_limit,h_1200,q_75,w_1200/https://assets.dam.simpleviewinc.com/asset/618163fee6e035006b34c8da",
+            "cuisine": ["Sweets"],
+            "hours": ["Mon-Wed 11am-1am", "Thurs-Fri 11am-3am", "Sat 12am-3am", "Sun 12am-1am"],
+            "price": "$",
+            "dietRange": [
+                "None"
+            ],
+            "website": "https://insomniacookies.com/goto/store/1079",
+            "directions": "https://g.page/insomnia-cookies-chapel-hill?share",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Cold Stone Creamery",
+            "image": "https://d1ralsognjng37.cloudfront.net/8abbad9a-40c1-4342-8e3b-fd2dbe2764a4",
+            "cuisine": ["Sweets"],
+            "hours": ["Sun-Thurs 12pm-10pm", "Fri-Sat 12pm-10:30pm"],
+            "price": "$$",
+            "dietRange": [
+                "None"
+            ],
+            "website": "https://www.coldstonecreamery.com/stores/20861",
+            "directions": "https://g.page/Ice-cream-shop-chapel-hill?share",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "The Blue Horn Lounge",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb3b6BcGtcukSLYaJIkbyvJ2BqvKITZoA-lA&usqp=CAU",
+            "cuisine": ["Bar", "American"],
+            "hours": ["Mon-Sun 2pm-2am"],
+            "price": "$$",
+            "dietRange": [
+                "None"
+            ],
+            "website": "https://www.facebook.com/bluehornlounge/",
+            "directions": "https://goo.gl/maps/8M8DPCdN8wFpUJbJA",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Epilogue",
+            "image": "https://www.graduatehotels.com/chapel-hill/wp-content/uploads/sites/35/2021/05/ChapelHill_Epilogue-Books-scaled-640x480-c-default.jpg",
+            "cuisine": ["Coffee", "Mexican", "Sweets"],
+            "hours": ["Mon-Wed 7am-11pm", "Thurs-Fri 7am-9pm", "Sat 8am-9pm", "Sun 9am-7pm"],
+            "price": "$$",
+            "dietRange": [
+                "None"
+            ],
+            "website": "https://epiloguebookcafe.com/",
+            "directions": "https://g.page/epiloguebooksch?share",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Sup Dogs",
+            "image": "https://www.nctriangledining.com/wp-content/uploads/2017/07/SupDogs-WesternSmokehouseDogsCheeseFries.jpg",
+            "cuisine": ["Bar", "American"],
+            "hours": ["Sat-Tues 11am-12am", "Wed-Fri 11am-3am"],
+            "price": "$$",
+            "dietRange": [
+                "None"
+            ],
+            "website": "https://supdogs.com/",
+            "directions": "https://g.page/SupDogsUNC?share",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Momo's Master",
+            "image": "https://assets.simpleviewinc.com/simpleview/image/fetch/c_fill,h_411,q_75,w_620/https://assets.dam.simpleviewinc.com/asset/61c233d274266d02e93b8d85",
+            "cuisine": ["Asian", "Himalayan", "Indian"],
+            "hours": ["Mon-Thur 2pm-9pm", "Fri-Sat 12pm-9:30pm"],
+            "price": "$$",
+            "dietRange": [
+                "Vegetarian",
+                "Vegan",
+                "Gluten-Free"
+            ],
+            "website": "http://www.momosmaster.com/",
+            "directions": "https://goo.gl/maps/ddXPg56TNnbmNL9B8",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Starbucks",
+            "image": "https://cdn.usarestaurants.info/assets/uploads/148c704e008caab3b5dc84f8cfeca2e2_-united-states-north-carolina-orange-county-chapel-hill-starbucks-919-932-3824htm.jpg",
+            "cuisine": ["Coffee", "Sweets"],
+            "hours": ["Mon-Sat 6am-9pm", "Sun 6:30am-9pm"],
+            "price": "$$",
+            "dietRange": [
+                "None"
+            ],
+            "website": "https://www.starbucks.com/store-locator/store/15341/",
+            "directions": "https://goo.gl/maps/1cCugj9Q5Db8Rwuw6",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Carolina Coffee Shop",
+            "image": "https://roadfood.com/wp-content/uploads/2019/07/IMG_0968.jpg",
+            "cuisine": ["American", "Bar", "Coffee"],
+            "hours": ["Mon-Sun 8am-3pm"],
+            "price": "$$",
+            "dietRange": [
+                "Vegetarian"
+            ],
+            "website": "http://www.carolinacoffeeshop.com/",
+            "directions": "https://goo.gl/maps/Geia6ejixGscBsnC8",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Curry Point Express",
+            "image": "https://d1ralsognjng37.cloudfront.net/81732d85-5e66-485a-ae0c-25be24502442.jpeg",
+            "cuisine": ["Indian", "Asian"],
+            "hours": ["Mon-Sun 11am-9pm"],
+            "price": "$$",
+            "dietRange": [
+                "Vegetarian"
+            ],
+            "website": "http://currypointexpresstogo.com/",
+            "directions": "https://goo.gl/maps/6pG2yhZV7F7tpJe36",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Top of the Hill",
+            "image": "https://images.squarespace-cdn.com/content/v1/537261a3e4b06f7436cc8d37/1595454416162-MZYP2PMOSG0W7T5BJPD4/TOPO+-+Exterior+8.jpg",
+            "cuisine": ["American", "Bar"],
+            "hours": ["Wed 12pm-12am", "Thurs-Sat 12pm-2am", "Sun 11am-10pm", "Mon 12pm-10pm"],
+            "price": "$$",
+            "dietRange": [
+                "Vegetarian",
+                "Vegan",
+                "Gluten-Free"
+            ],
+            "website": "http://www.thetopofthehill.com/",
+            "directions": "https://goo.gl/maps/ykQ3D3ei7TU4YVAt8",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Buns",
+            "image": "http://bunsofchapelhill.com/wp-content/uploads/2014/05/greetings.jpg",
+            "cuisine": ["American", "Sweets"],
+            "hours": ["Tues-Sun 11am-9pm"],
+            "price": "$",
+            "dietRange": [
+                "Vegetarian",
+                "Vegan",
+                "Gluten-Free"
+            ],
+            "website": "http://bunsofchapelhill.com/",
+            "directions": "https://goo.gl/maps/Z8UxhV8VqdjiTbty7",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Kurama Sushi and Noodle Express",
+            "image": "https://indyweek.com/downloads/15443/download/160114_ab_indy_kurama_0034.jpe?cb=f4c957f9e7b68350f76f7ccc0e4b2b20",
+            "cuisine": ["Chinese", "Asian"],
+            "hours": ["Sun-Tues & Thurs 11:30am-8pm", "Fri-Sat 11:30am-9pm"],
+            "price": "$",
+            "dietRange": [
+                "Vegetarian",
+                "Vegan",
+                "Gluten-Free"
+            ],
+            "website": "https://www.kuramasushinoodle.com/",
+            "directions": "https://goo.gl/maps/ko1oTj8VDYm3fw3b6",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Tropical Smoothie Cafe",
+            "image": "https://dynl.mktgcdn.com/p/puiPTaAzL4FipAku-mfGThIMoMOFVTxIyP7yIGsgYFs/426x260.png",
+            "cuisine": ["Smoothies"],
+            "hours": ["Mon-Sat 8:00am-8:00pm", "Sun 9:00am-8:00pm"],
+            "price": "$",
+            "dietRange": [
+                "Vegetarian",
+                "Vegan",
+                "Gluten-Free"
+            ],
+            "website": "https://locations.tropicalsmoothiecafe.com/nc/chapel-hill/400-w-franklin-street",
+            "directions": "https://goo.gl/maps/wgk3jpETa8DVyRFa7",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Mediterranean Deli",
+            "image": "https://images.squarespace-cdn.com/content/v1/5a8b1d172aeba5f15872ede3/1559505390009-XADOZ8XI5U9C1I2BTKX1/NY7A8985.jpg?format=2500w",
+            "cuisine": ["Mediterranean", "Greek", "Middle Eastern"],
+            "hours": ["Open Daily 11:00am-10:00pm"],
+            "price": "$$",
+            "dietRange": [
+                "Vegetarian",
+                "Vegan",
+                "Gluten-Free"
+            ],
+            "website": "https://mediterraneandeli.com/",
+            "directions": "https://goo.gl/maps/4FjGR4wsqov6WGxY8",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Heavenly Buffaloes",
+            "image": "https://images.squarespace-cdn.com/content/v1/55c7b699e4b0ff8d211400b0/1442460983674-JCHMKQNX15SNY1TCBKBI/2015_0906_15455600.jpg?format=1000w",
+            "cuisine": ["Fast Food", "American"],
+            "hours": ["Sun-Tue 11:00am-10:00pm", "Wed-Sat 11:00am-12:00am"],
+            "price": "$$",
+            "dietRange": [
+                "Vegetarian",
+                "Vegan",
+                "Gluten-Free"
+            ],
+            "website": "https://www.heavenlybuffaloes.com/",
+            "directions": "https://goo.gl/maps/uX3ucP1CW46vbeV28",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "McDonald's",
+            "image": "https://cdn.usarestaurants.info/assets/uploads/8c29c30e8da3e319dd0f96d6e9b9b132_-united-states-north-carolina-orange-county-chapel-hill-mcdonalds-919-967-5788htm.jpg",
+            "cuisine": ["Fast Food", "American"],
+            "hours": ["Mon-Sat 5:00am-12:00am", "Sun 6:00am-12:00am"],
+            "price": "$",
+            "dietRange": [
+                "Vegetarian",
+                "Vegan",
+                "Gluten-Free"
+            ],
+            "website": "https://www.mcdonalds.com/us/en-us/location/NC/CHAPEL-HILL/409-W-FRANKLIN-ST/2522.html?cid=RF:YXT:GMB::Clicks",
+            "directions": "https://goo.gl/maps/Fp8WkZjcwDYZTfTK6",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "411 West Italian Cafe",
+            "image": "data:image/jpeg;base64,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",
+            "cuisine": ["Italian", "American"],
+            "hours": ["Sun-Thu 5:00pm-9:00pm", "Fri-Sat 5:00pm-9:30pm"],
+            "price": "$$",
+            "dietRange": [
+                "Vegetarian",
+                "Vegan",
+                "Gluten-Free"
+            ],
+            "website": "https://www.411west.com/",
+            "directions": "https://goo.gl/maps/Cmqp64ebEW3xuJNu5",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "The Northside District",
+            "image": "http://media.bizj.us/view/img/7567062/the-northside-district*1200xx960-540-0-50.jpg",
+            "cuisine": ["American"],
+            "hours": ["Mon-Sun 5:00pm-2:00am"],
+            "price": "$",
+            "dietRange": [
+                "Vegetarian",
+                "Vegan",
+                "Gluten-Free"
+            ],
+            "website": "http://www.thenorthsidedistrict.com/",
+            "directions": "https://goo.gl/maps/FViC61rAo2LSAoEc8",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Tonya's Cookies",
+            "image": "https://cdn.shopify.com/s/files/1/0600/1757/4074/products/TC-CS-1_530x@2x.jpg?v=1635261207",
+            "cuisine": ["Cafe", "Sweets"],
+            "hours": ["Mon-Sun 11:00am-7:00pm"],
+            "price": "$$",
+            "dietRange": [
+                "Vegetarian",
+                "Vegan",
+                "Gluten-Free"
+            ],
+            "website": "https://www.tonyascookies.com/",
+            "directions": "https://goo.gl/maps/ycc35hrszCqRQLRdA",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Mama Dip's Kitchen",
+            "image": "https://assets.simpleviewinc.com/simpleview/image/fetch/c_limit,h_1200,q_75,w_1200/https://assets.dam.simpleviewinc.com/asset/618162cfe6e035006b34c5c9",
+            "cuisine": ["American"],
+            "hours": ["Wed-Sat 11:00am-7:00pm"],
+            "price": "$$",
+            "dietRange": [
+                "Vegetarian",
+                "Vegan",
+                "Gluten-Free"
+            ],
+            "website": "https://mamadips.com/",
+            "directions": "https://goo.gl/maps/SHz2muqPQE8ZofUv7",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Lantern",
+            "image": "https://images.otstatic.com/prod/24864836/1/huge.jpg",
+            "cuisine": ["Asian", "Fusion"],
+            "hours": ["Wed-Thu 5:00pm-9:00pm", "Fri-Sat 5:00pm-10:00pm"],
+            "price": "$$$",
+            "dietRange": [
+                "Vegetarian",
+                "Vegan",
+                "Gluten-Free"
+            ],
+            "website": "https://www.lanternrestaurant.com/",
+            "directions": "https://goo.gl/maps/7AM198emY9TgbuCdA",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "The Cave",
+            "image": "https://magnetmagazine.com/wp-content/uploads/2014/05/Cave.jpg",
+            "cuisine": ["Bar"],
+            "hours": ["Tue-Sat 3:00pm-2:00am", "Sun 3:00pm-12:00am", "Mon 12:00am-12:00pm and 3:00pm-2:00am"],
+            "price": "$",
+            "dietRange": [
+                "Vegetarian",
+                "Vegan",
+                "Gluten-Free"
+            ],
+            "website": "http://caverntavern.com/",
+            "directions": "https://goo.gl/maps/1KF83x7RsrtntTpAA",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Tallulah's",
+            "image": "https://cdn.usarestaurants.info/assets/uploads/22c5f1672e7a2bdf17087676e8ddec06_-united-states-north-carolina-orange-county-chapel-hill-talullas-919-933-1177htm.jpg",
+            "cuisine": ["Middle Eastern"],
+            "hours": ["Tue-Sat 4:30pm-10:00pm"],
+            "price": "$$",
+            "dietRange": [
+                "Vegetarian",
+                "Vegan",
+                "Gluten-Free"
+            ],
+            "website": "http://talullas.com/",
+            "directions": "https://goo.gl/maps/AijvjkyqAuiqGg5z8",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Carolina Brewery",
+            "image": "https://media-cdn.tripadvisor.com/media/photo-s/06/13/fa/61/carolina-brewery.jpg",
+            "cuisine": ["American", "Bar"],
+            "hours": ["Mon-Thu 11:00am-11:00pm", "Fri 11:00am-12:00am", "Sat 10:00am-12:00am", "Sun 10:00am-10:00pm"],
+            "price": "$$",
+            "dietRange": [
+                "Vegetarian",
+                "Vegan",
+                "Gluten-Free"
+            ],
+            "website": "https://www.carolinabrewery.com/",
+            "directions": "https://goo.gl/maps/pXduyGYMuCHp4Fuz9",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Blue House Cafe",
+            "image": "https://chapelhillmagazine.com/wp-content/uploads/2021/12/blue_house-1024x682.jpg",
+            "cuisine": ["Cafe"],
+            "hours": ["Mon-Fri 10:00am-4:00pm"],
+            "price": "$$",
+            "dietRange": [
+                "Vegetarian",
+                "Vegan",
+                "Gluten-Free"
+            ],
+            "website": "https://bluehousecafech.square.site/",
+            "directions": "https://goo.gl/maps/F7QJFB1QYU9aSgy66",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Saturni",
+            "image": "https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=600,height=400,format=auto,quality=50/https://doordash-static.s3.amazonaws.com/media/store/header/fef65ed3-088f-4d26-b854-c7a9c597001e.jpg",
+            "cuisine": ["Cafe", "Sweets"],
+            "hours": ["Thu-Sat 10:00am-10:00pm", "Sun-Tue 10:00am-8:00pm"],
+            "price": "$$",
+            "dietRange": [
+                "Vegetarian",
+                "Vegan",
+                "Gluten-Free"
+            ],
+            "website": "https://www.saturni-nc.com/",
+            "directions": "https://goo.gl/maps/cgRhZ4mGbbiMqX2e7",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Vimala's Curryblossom Cafe",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Vimala%27s_Curryblossom_Cafe_-_interior.jpg",
+            "cuisine": ["Indian"],
+            "hours": ["Mon-Wed 12:00pm-7:00pm", "Thu-Sat 12:00pm-8:00pm"],
+            "price": "$$",
+            "dietRange": [
+                "Vegetarian",
+                "Vegan",
+                "Gluten-Free"
+            ],
+            "website": "https://curryblossom.com/",
+            "directions": "https://goo.gl/maps/5kPS9uksksc7viT58",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Brandwein's Bagels",
+            "image": "https://media.bizj.us/view/img/12038142/img6875*1200xx3945-2216-0-380.jpg",
+            "cuisine": ["Cafe"],
+            "hours": ["Mon-Sun 6:30am-3:30pm"],
+            "price": "$",
+            "dietRange": [
+                "Vegetarian",
+                "Vegan",
+                "Gluten-Free"
+            ],
+            "website": "https://www.brandweinsbagels.com/",
+            "directions": "https://goo.gl/maps/AVkE8MdWH94oGvWBA",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Mint Indian Cuisine",
+            "image": "https://duyt4h9nfnj50.cloudfront.net/resized/d294a811b676ae61fd66d7a40ff3b69e-w2880-bc.jpg",
+            "cuisine": ["Indian"],
+            "hours": ["Mon-Sun 11:30am-2:30pm and 4:00pm-9:00pm"],
+            "price": "$$",
+            "dietRange": [
+                "Vegetarian",
+                "Vegan",
+                "Gluten-Free"
+            ],
+            "website": "https://mintunc504.com/order-now#beverages",
+            "directions": "https://g.page/mintindiancuisine?share",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Local 506",
+            "image": "https://media.bizj.us/view/img/12070823/catscradle50thpan*750xx3756-2113-731-0.jpg",
+            "cuisine": ["Bar"],
+            "hours":["Mon-Thu 5:00pm-10:00pm", "Sat 5:00pm-11:00pm", "Sunday 2:00pm-10:00pm"],
+            "price": "$",
+            "dietRange": [
+                "Vegetarian",
+                "Vegan",
+                "Gluten-Free"
+            ],
+            "website": "https://local506.com/",
+            "directions": "https://goo.gl/maps/KFogAb5YgFkXc84m8",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Pho Happiness",
+            "image": "https://d1ralsognjng37.cloudfront.net/0be93653-3cb0-40a7-aac6-a577bc02836b.webp",
+            "cuisine": ["Vietnamese", "Asian"],
+            "hours": ["Mon-Sat 12:00pm-8:30pm"],
+            "price": "$",
+            "dietRange": [
+                "Vegetarian",
+                "Vegan",
+                "Gluten-Free"
+            ],
+            "website": "http://www.phohappinessnc.com/",
+            "directions": "https://goo.gl/maps/nH9JMbVeK6CkvsjFA",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Italian Pizzeria III",
+            "image": "https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=600,height=400,format=auto,quality=50/https://doordash-static.s3.amazonaws.com/media/store/header/f85d05f6-623f-4ca5-90b1-82213d5fb634.jpg",
+            "cuisine": ["Pizza"],
+            "hours": ["Mon-Sat 11:00am-9:30pm", "Sun 12:00pm-9:30pm"],
+            "price": "$",
+            "dietRange": [
+                "Vegetarian",
+                "Vegan",
+                "Gluten-Free"
+            ],
+            "website": "https://italianpizzeria3.com/",
+            "directions": "https://goo.gl/maps/oyUQbkxMHmyF8RhS9",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Al's Burger Shack",
+            "image": "https://images.squarespace-cdn.com/content/v1/5988cb683a04113a5f6b3aba/1502210443285-SQEDXKWC6UIZC1J0TFZB/p2441657600-o307234050-6.jpg?format=2500w",
+            "cuisine": ["American"],
+            "hours": ["Tue-Sat 9:00am-8:00pm"],
+            "price": "$",
+            "dietRange": [
+                "Vegetarian",
+                "Vegan",
+                "Gluten-Free"
+            ],
+            "website": "https://www.alsburgershack.com/",
+            "directions": "https://goo.gl/maps/iq8mMvAV4F1WqYb88",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Papa John's",
+            "image": "https://www.papajohns.com/static-assets/a/images/web/deal/pizzas/ny-style-edeal-compressed.jpg",
+            "cuisine": ["American", "Pizza"],
+            "hours": ["Mon-Thu 10:00am-11:00pm", "Fri-Sat 10:00am-12:00am", "Sun 11:00am-11:00pm"],
+            "price": "$",
+            "dietRange": [
+                "Vegetarian",
+                "Vegan",
+                "Gluten-Free"
+            ],
+            "website": "https://locations.papajohns.com/united-states/nc/27516-2316/chapel-hill/607b-w-franklin-st?utm_medium=organic&utm_source=gmb",
+            "directions": "https://goo.gl/maps/UN29SsmgyR1bNdty7",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Franklin Motors",
+            "image": "data:image/jpeg;base64,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",
+            "cuisine": ["American", "Bar"],
+            "hours": ["Mon, Wed-Sat 11:30am-12:00am", "Sun 11:30am-10:00pm"],
+            "price": "$",
+            "dietRange": [
+                "Vegetarian",
+                "Vegan",
+                "Gluten-Free"
+            ],
+            "website": "https://www.franklinmotors.net/",
+            "directions": "https://goo.gl/maps/5MMwWZmJT44iL1GP8",
+            "rating": 5,
+            "sitTime": "pulled from google",
+            "foodTime": 0,
+            "vibes": [
+            ],
+            "reviews": {
+            }
+        },
+        {
+            "name": "Ben & Jerry’s",
+            "image": "https://tb-static.uber.com/prod/image-proc/processed_images/5219e06397c0e66667ca601271be1915/c73ecc27d2a9eaa735b1ee95304ba588.jpeg",
+        	"cuisine": ["Sweets"],
+        	"hours": "Sun-Thur 1pm-11pm, Fri-Sat 1pm-12am",
+        	"price": "$$",
+        	"dietRange": [
+            	"vegetarian", "vegan", "gluten-free"
+        	],
+        	"website": "https://www.benjerry.com/chapelhill",
+        	"directions": "https://g.page/benjerrychnc?share",
+        	"rating": 5,
+        	"sitTime": "pulled from google",
+        	"foodTime": 0,
+        	"vibes": [
+        	],
+        	"reviews": {
+        	}
+    	},
+    	{
+            "name": "Trolly Stop Hot Dogs",
+            "image": "https://localwiki.org/media/cache/fb/4b/fb4bc198e9588f2310cbb1e1c3d1d25e.jpg",
+        	"cuisine": ["American"],
+        	"hours": "Mon-Sat 11am-8pm",
+        	"price": "$",
+        	"dietRange": [
+            	"None"
+        	],
+        	"website": "https://www.trollystophotdogs.com/",
+        	"directions": "https://g.page/trollystopchapelhill?share",
+        	"rating": 5,
+        	"sitTime": "pulled from google",
+        	"foodTime": 0,
+        	"vibes": [
+        	],
+        	"reviews": {
+        	}
+    	},
+    	{
+            "name": "I Love New York Pizza",
+            "image": "https://duyt4h9nfnj50.cloudfront.net/resized/1540499952228-w2880-a3.jpg",
+        	"cuisine": ["American", "Pizza", "Italian"],
+        	"hours": "Mon 12pm-5pm, Tues-Wed 12pm-12am, Thurs-Sat 12pm-2am",
+        	"price": "$$",
+        	"dietRange": [
+            	"Vegetarian", "Vegan"
+        	],
+        	"website": "https://www.orderilovenewyorkpizza.com/",
+        	"directions": "https://goo.gl/maps/SuzQsarhqTHSx7aH9",
+        	"rating": 5,
+        	"sitTime": "pulled from google",
+        	"foodTime": 0,
+        	"vibes": [
+        	],
+        	"reviews": {
+        	}
+    	},
+    	{
+            "name": "Yogurt Pump",
+            "image": "http://yogurtpump.com/uploads/8/9/7/4/89748231/54_orig.jpg",
+        	"cuisine": ["Sweets"],
+        	"hours": "Sun-Wed 12pm-9pm, Thurs-Fri 12pm-10pm",
+        	"price": "$",
+        	"dietRange": [
+            	"Vegetarian", "Vegan", "Gluten-Free"
+        	],
+        	"website": "http://www.yogurtpump.com/index.html",
+        	"directions": "https://g.page/TheYogurtPump?share",
+        	"rating": 5,
+        	"sitTime": "pulled from google",
+        	"foodTime": 0,
+        	"vibes": [
+        	],
+        	"reviews": {
+        	}
+    	},
+    	{
+            "name": "Blue’s on Franklin",
+            "image": "https://assets.dam.simpleviewinc.com/asset/61816482e6e035006b34ca06",
+        	"cuisine": ["American", "Bar", "Barbecue"],
+        	"hours": "Tues-Wed 11:30am-3pm 5pm-9pm, Thurs-Sat 11:30am-10pm",
+        	"price": "$$",
+        	"dietRange": [
+            	"Vegetarian",
+            	"Vegan"
+        	],
+        	"website": "https://bluesonfranklin.com/",
+        	"directions": "https://goo.gl/maps/8wN9wEnGZpp5En5w9",
+        	"rating": 5,
+        	"sitTime": "pulled from google",
+        	"foodTime": 0,
+        	"vibes": [
+        	],
+        	"reviews": {
+        	}
+    	},
+    	{
+            "name": "Spicy 9 Sushi Bar & Asian",
+            "image": "https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=600,height=400,format=auto,quality=50/https://doordash-static.s3.amazonaws.com/media/store/header/f16511d6-4da1-497e-846d-3d4a3ce94b92.jpg",
+        	"cuisine": ["Sushi", "Bar", "Asian"],
+        	"hours": "Sun 12pm-10pm, Mon-Sat 11am-10pm",
+        	"price": "$$",
+        	"dietRange": [
+            	"Vegetarian",
+            	"Vegan", "Gluten-Free"
+        	],
+        	"website": "https://www.spicy9chapelhill.com/",
+        	"directions": "https://goo.gl/maps/nJo52kK938eJbbaX8",
+        	"rating": 5,
+        	"sitTime": "pulled from google",
+        	"foodTime": 0,
+        	"vibes": [
+        	],
+        	"reviews": {
+        	}
+    	},
+    	{
+            "name": "Le Macaron French Pastries",
+            "image": "https://chapelboromedia.s3.amazonaws.com/uploads/2021/07/31111910/Picture5.png",
+        	"cuisine": ["Sweets", "French"],
+        	"hours": "Mon-Sat 9am-8pm, Sun 9am-7pm",
+        	"price": "$$",
+        	"dietRange": [
+            	"Vegetarian", 
+	"Gluten-Free"
+        	],
+        	"website": "https://lemacaron-us.com//",
+        	"directions": "https://goo.gl/maps/RVe4nqM5mZQUwvkXA",
+        	"rating": 5,
+        	"sitTime": "pulled from google",
+        	"foodTime": 0,
+        	"vibes": [
+        	],
+        	"reviews": {
+        	}
+    	},
+    	{
+            "name": "Que Chula Craft Tacos & Tequila Bar",
+            "image": "https://images.otstatic.com/prod1/42044447/1/large.jpg",
+        	"cuisine": ["Mexican", "Bar"],
+        	"hours": "Mon-Thurs 11am-10pm, Fri-Sat 11am-11pm, Sun 11am-9pm",
+        	"price": "$$",
+        	"dietRange": [
+            	"None"
+        	],
+        	"website": "https://quechulatacos.com/",
+        	"directions": "https://g.page/quechula?share",
+        	"rating": 5,
+        	"sitTime": "pulled from google",
+        	"foodTime": 0,
+        	"vibes": [
+        	],
+        	"reviews": {
+        	}
+    	},
+    	{
+            "name": "La Residence",
+            "image": "https://assets.dam.simpleviewinc.com/asset/618163fae6e035006b34c8cf",
+        	"cuisine": ["French", "Seafood"],
+        	"hours": "Thurs 5pm-11pm, Fri 12pm-11pm, Sat-Sun 1am-11pm",
+        	"price": "$$",
+        	"dietRange": [
+            	"None"
+        	],
+        	"website": "http://www.laresidencedining.com/",
+        	"directions": "https://goo.gl/maps/Cdsuf2FnPMWi8cBP6",
+        	"rating": 5,
+        	"sitTime": "pulled from google",
+        	"foodTime": 0,
+        	"vibes": [
+        	],
+        	"reviews": {
+        	}
+    	},
+    	{
+            "name": "Pantana Bob’s",
+            "image": "https://media-cdn.tripadvisor.com/media/photo-s/11/df/e5/66/pantana-bob-s.jpg",
+        	"cuisine": ["American", "Bar"],
+        	"hours": "Mon-Fri 3pm-2am, Sat-Sun 12pm-2am",
+        	"price": "$$",
+        	"dietRange": [
+            	"None"
+        	],
+        	"website": "https://www.facebook.com/PantanaBobsCH/",
+        	"directions": "https://goo.gl/maps/hUgzzCnpmtAjCa7y7",
+        	"rating": 5,
+        	"sitTime": "pulled from google",
+        	"foodTime": 0,
+        	"vibes": [
+        	],
+        	"reviews": {
+        	}
+    	},
+    	{
+            "name": "Might As Well",
+            "image": "https://assets.simpleviewinc.com/simpleview/image/fetch/c_limit,h_1200,q_75,w_1200/https://assets.dam.simpleviewinc.com/asset/6181636be6e035006b34c7ae",
+        	"cuisine": ["American", "Bar"],
+        	"hours": "Mon-Thur 4pm-2am, Fri-Sun 12pm-2am",
+        	"price": "$$",
+        	"dietRange": [
+            	"None"
+        	],
+        	"website": "https://chapelhill.mightaswellbarandgrill.com",
+        	"directions": "https://goo.gl/maps/BTA9Jd6wK4GZgfNS8",
+        	"rating": 5,
+        	"sitTime": "pulled from google",
+        	"foodTime": 0,
+        	"vibes": [
+        	],
+        	"reviews": {
+        	}
+    	},
+    	{
+            "name": "Panera Bread",
+            "image": "https://media-cdn.tripadvisor.com/media/photo-s/0d/4e/1a/e7/photo0jpg.jpg",
+        	"cuisine": ["American", "Deli"],
+        	"hours": "Mon-Sat 6am-9pm, Sun 7am-9pm",
+        	"price": "$$",
+        	"dietRange": [
+            	"None"
+        	],
+        	"website": "https://locations.panerabread.com/nc/chapel-hill/213-w-franklin-st.html",
+        	"directions": "https://goo.gl/maps/Me9gV796yQcnCdHw6",
+        	"rating": 5,
+        	"sitTime": "pulled from google",
+        	"foodTime": 0,
+        	"vibes": [
+        	],
+        	"reviews": {
+        	}
+    	},
+    	{
+            "name": "Chimney Indian Kitchen + Bar",
+            "image": "https://d1ralsognjng37.cloudfront.net/ed2e8613-f75c-4d77-aa6a-f0e00ff0e069.jpeg",
+        	"cuisine": ["Indian", "Bar"],
+        	"hours": "Mon-Fri 11am-2:30pm 5pm-9pm, Sat-Sun 12pm-9pm",
+        	"price": "$$",
+        	"dietRange": [
+            	"Vegetarian", "Vegan", "Gluten-Free"
+        	],
+        	"website": "https://www.chimneyindiankitchen.com/",
+        	"directions": "https://goo.gl/maps/FiZMBraia1KiChu7A",
+        	"rating": 5,
+        	"sitTime": "pulled from google",
+        	"foodTime": 0,
+        	"vibes": [
+        	],
+        	"reviews": {
+        	}
+    	},
+    	{
+            "name": "Vegan Flava Cafe",
+            "image": "https://images.happycow.net/venues/1024/38/62/hcmp38620_200306.jpeg",
+        	"cuisine": ["Indian", "American", "Smoothies"],
+        	"hours": "Fri 5pm-7pm, Sat 1pm-7pm, Sun 12pm-4pm",
+        	"price": "$$",
+        	"dietRange": [
+            	"Vegetarian", "Vegan", "Gluten-Free"
+        	],
+        	"website": "http://www.veganflavacafe.com/",
+        	"directions": "https://goo.gl/maps/9SrYyxvhpkpbBiDm9",
+        	"rating": 5,
+        	"sitTime": "pulled from google",
+        	"foodTime": 0,
+        	"vibes": [
+        	],
+        	"reviews": {
+        	}
+    	},
+    	{
+            "name": "Chipotle Mexican Grill",
+            "image": "https://b.zmtcdn.com/data/pictures/5/17053295/dd98968df32e16893a481cceeb40cbf6.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*",
+        	"cuisine": ["Mexican"],
+        	"hours": "Mon-Sun 10:45am-10pm",
+        	"price": "$$",
+        	"dietRange": [
+            	"Vegetarian", "Vegan", "Gluten-Free"
+        	],
+        	"website": "https://locations.chipotle.com/nc/chapel-hill/301-w-franklin-st",
+        	"directions": "https://goo.gl/maps/7NKFFsKHbYPPM9eB8",
+        	"rating": 5,
+        	"sitTime": "pulled from google",
+        	"foodTime": 0,
+        	"vibes": [
+        	],
+        	"reviews": {
+        	}
+    	},
+    	{
+            "name": "The Purple Bowl",
+            "image": "https://res.cloudinary.com/rppcloud/image/fetch/s--CYW9vTSQ--/c_fill,e_viesus_correct,g_auto,h_600,w_900/https://s3-media3.fl.yelpcdn.com/bphoto/OD0dfOI-I4c_7mxzsG6WlQ/o.jpg",
+        	"cuisine": ["Smoothies", "Cafe"],
+        	"hours": "Mon-Sun 8am-7pm",
+        	"price": "$$",
+        	"dietRange": [
+            	"None"
+        	],
+        	"website": "https://www.purplebowlch.com/",
+        	"directions": "https://goo.gl/maps/ffNFPAdnvcq9J6PS7",
+        	"rating": 5,
+        	"sitTime": "pulled from google",
+        	"foodTime": 0,
+        	"vibes": [
+        	],
+        	"reviews": {
+        	}
+    	},
+    	{
+            "name": "Cholonad",
+            "image": "https://ot-foodspotting-production.s3.amazonaws.com/reviews/2456750/thumb_600.jpg",
+        	"cuisine": ["Indian", "Bar"],
+        	"hours": "Mon-Thurs 11:30am-2:30pm 5pm-10pm, Fri-Sat 11:30am-11pm, Sun 11:30am-9:30pm",
+        	"price": "$$",
+        	"dietRange": [
+            	"Vegetarian", "Vegan", "Gluten-Free"
+        	],
+        	"website": "https://cholanad.com/",
+        	"directions": "https://g.page/CholaNad?share",
+        	"rating": 5,
+        	"sitTime": "pulled from google",
+        	"foodTime": 0,
+        	"vibes": [
+        	],
+        	"reviews": {
+        	}
+    	},
+    	{
+            "name": "Cha House",
+            "image": "https://assets.dam.simpleviewinc.com/asset/618163fae6e035006b34c8ad",
+        	"cuisine": ["Cafe", "Boba", "Chinese"],
+        	"hours": "Sun-Thurs 11am-9pm, Fri-Sat 11am-9:30pm",
+        	"price": "$$",
+        	"dietRange": [
+            	"Vegetarian", "Vegan", "Gluten-Free"
+        	],
+        	"website": "https://www.chahouseusa.com/",
+        	"directions": "https://goo.gl/maps/Nf581GFLnDctAehu6",
+        	"rating": 5,
+        	"sitTime": "pulled from google",
+        	"foodTime": 0,
+        	"vibes": [
+        	],
+        	"reviews": {
+        	}
+    	},
+    	{
+            "name": "The Crunkleton",
+            "image": "https://thecrunkleton.com/wp-content/uploads/2018/08/s22-2.jpg",
+        	"cuisine": ["Bar", "Wine Bar"],
+        	"hours": "Mon-Sun 4pm-2am",
+        	"price": "$$",
+        	"dietRange": [
+	"None"
+        	],
+        	"website": "https://thecrunkleton.com/",
+        	"directions": "https://goo.gl/maps/CuQM1rWccY8Rb2W99",
+        	"rating": 5,
+        	"sitTime": "pulled from google",
+        	"foodTime": 0,
+        	"vibes": [
+        	],
+        	"reviews": {
+        	}
+    	},
+    	{
+            "name": "Perennial",
+            "image": "https://images.squarespace-cdn.com/content/v1/59259dc5e3df2802dd10eced/1625405104648-0XXBX1KAD6QAKOLNJ736/image-asset.jpeg",
+        	"cuisine": ["Cafe", "Coffee", "Sweets"],
+        	"hours": "Mon-Fri 8am-2pm, Sat-Sun 9am-3pm",
+        	"price": "$$",
+        	"dietRange": [
+            	"Vegetarian", "Vegan", "Gluten-Free"
+        	],
+        	"website": "https://www.perennial.cafe/",
+        	"directions": "https://goo.gl/maps/zbsRdabfdk21swiq6",
+        	"rating": 5,
+        	"sitTime": "pulled from google",
+        	"foodTime": 0,
+        	"vibes": [
+        	],
+        	"reviews": {
+        	}
+    	}
+    ]
+}
